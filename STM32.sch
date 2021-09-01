@@ -265,8 +265,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 1650 7250 1650
-Wire Wire Line
 	6800 1750 7250 1750
 Wire Wire Line
 	6800 1850 7250 1850
@@ -1685,4 +1683,14 @@ Text Notes 2800 3150 0    50   ~ 0
 (nominal: 2.95 V)
 Text Notes 4550 950  0    50   ~ 0
 TODO: This was copied for the ECE 362 Reference design and needs to be modified for our purposes
+Text HLabel 7350 1200 0    50   Output ~ 0
+MUX_SEL0
+Text Label 7750 1200 0    50   ~ 0
+example_heirach_label
+Wire Wire Line
+	7350 1200 7350 1650
+Wire Wire Line
+	6800 1650 7350 1650
+Wire Wire Line
+	7350 1200 7750 1200
 $EndSCHEMATC
