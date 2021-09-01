@@ -17,3 +17,5 @@ For this project specifically, the Grid.sch file can be reused for both the top 
 - Navigate back to the parent sheet and right click on the child sheet where you jused added the label
 - Select the `import sheet pins` option
   - NOTE that you will have to do this for every new pin that you add to the child sheet, kinda repetative if you have a bunch of heirarchical labels...
+
+`ESP32 Reference Design` - Adafruit produced a reference/dev board for the ESP32. They have great documentation on the device and are generous enough to include images of their schematic. This is a good place to start for our design. See the [Adafruit Website](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/downloads) for details.
