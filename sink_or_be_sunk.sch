@@ -59,4 +59,98 @@ Wire Wire Line
 	9850 1450 9350 1450
 Text Label 9350 1450 0    50   ~ 0
 DAC_OUT
+Wire Wire Line
+	6300 4000 7050 4000
+Text Label 7050 4000 2    50   ~ 0
+MUX_ROW_SEL0
+Wire Wire Line
+	6300 4100 7050 4100
+Text Label 7050 4100 2    50   ~ 0
+MUX_ROW_SEL1
+Wire Wire Line
+	6300 4200 7050 4200
+Text Label 7050 4200 2    50   ~ 0
+MUX_ROW_SEL2
+Wire Wire Line
+	6300 3300 7050 3300
+Text Label 7050 3300 2    50   ~ 0
+LCD_MOSI
+Wire Wire Line
+	6300 3400 7050 3400
+Text Label 7050 3400 2    50   ~ 0
+LCD_SCLK
+Wire Wire Line
+	6300 3500 7050 3500
+Text Label 7050 3500 2    50   ~ 0
+LCD_CS
+Wire Wire Line
+	6300 4300 7050 4300
+Text Label 7050 4300 2    50   ~ 0
+SPEAKER
+Wire Wire Line
+	6300 3600 7050 3600
+Text Label 7050 3600 2    50   ~ 0
+KEYPAD_IN0
+Wire Wire Line
+	6300 3700 7050 3700
+Text Label 7050 3700 2    50   ~ 0
+KEYPAD_IN1
+Wire Wire Line
+	6300 3800 7050 3800
+Text Label 7050 3800 2    50   ~ 0
+KEYPAD_IN2
+Wire Wire Line
+	6300 3900 7050 3900
+Text Label 7050 3900 2    50   ~ 0
+KEYPAD_IN3
+Wire Wire Line
+	6300 4400 7050 4400
+Text Label 7050 4400 2    50   ~ 0
+KEYPAD_OUT0
+Wire Wire Line
+	6300 4500 7050 4500
+Text Label 7050 4500 2    50   ~ 0
+KEYPAD_OUT1
+Wire Wire Line
+	6300 4600 7050 4600
+Text Label 7050 4600 2    50   ~ 0
+KEYPAD_OUT2
+Wire Wire Line
+	6300 4700 7050 4700
+Text Label 7050 4700 2    50   ~ 0
+KEYPAD_OUT3
+Wire Wire Line
+	6300 3200 7050 3200
+Text Label 7050 3200 2    50   ~ 0
+LED_OUT
+Wire Wire Line
+	6300 2800 7050 2800
+Text Label 7050 2800 2    50   ~ 0
+MUX_COL_SEL0
+Wire Wire Line
+	6300 3000 7050 3000
+Text Label 7050 3000 2    50   ~ 0
+MUX_COL_SEL1
+Text Label 7050 3100 2    50   ~ 0
+MUX_COL_SEL2
+Wire Wire Line
+	7050 3100 6300 3100
+Wire Wire Line
+	6300 2900 7050 2900
+Text Label 7050 2900 2    50   ~ 0
+DEBUG_RX
+Wire Wire Line
+	6300 2700 7050 2700
+Text Label 7050 2700 2    50   ~ 0
+DEBUG_TX
+Wire Wire Line
+	6300 4800 7050 4800
+Text Label 7050 4800 2    50   ~ 0
+BOAT_INPUT
+Text Notes 7650 4300 0    50   ~ 0
+DAC1 is io25,\nDAC2 is IO26
+Wire Wire Line
+	6300 4900 7050 4900
+Text Label 7050 4900 2    50   ~ 0
+MOTOR
 $EndSCHEMATC
