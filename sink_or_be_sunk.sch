@@ -20,8 +20,8 @@ F0 "STM32" 50
 F1 "STM32.sch" 50
 F2 "MUX_SEL0" O L 750 950 50 
 $EndSheet
-Text Notes 650  2750 0    50   ~ 0
-TODO: \n\n- Connect the sheets \n(mitch, you might have to help me with this)\n\n- Double check schematic for audio jack\n\n- footprints for speaker/pot\n
+Text Notes 550  3150 0    50   ~ 0
+TODO: \n\n- Connect the sheets \n(mitch, you might have to help me with this)\n\n- Double check schematic for audio jack\n\n- footprints for speaker/pot\n\n- add swd programming pins\n\n- add usb programming follow circuit \nhttps://cdn-learn.adafruit.com/assets/assets/000/041/630/original/feather_schem.png?1494449413\n\n- maybe add an external ocillator spot like they suggested?\n\n- add mounting holes (check size of standoff for footprint)
 Text Notes 800  1300 0    50   ~ 0
 Left the STM stuff here for reference.  Delete later
 $Comp
@@ -142,21 +142,19 @@ Wire Wire Line
 	6200 5200 6950 5200
 Text Label 6950 5200 2    50   ~ 0
 MOTOR
-Text Notes 9700 950  0    50   ~ 0
-NOTE: we have the MCP608 \non the parts list but this looks \nlike the same package
 Wire Wire Line
 	9700 1150 9400 1150
 $Comp
 L power:GND #PWR?
 U 1 1 615C22AF
-P 9000 1450
+P 9100 1500
 AR Path="/6144DCFC/615C22AF" Ref="#PWR?"  Part="1" 
 AR Path="/615C22AF" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 9000 1200 50  0001 C CNN
-F 1 "GND" H 9005 1277 50  0000 C CNN
-F 2 "" H 9000 1450 50  0001 C CNN
-F 3 "" H 9000 1450 50  0001 C CNN
-	1    9000 1450
+F 0 "#PWR09" H 9100 1250 50  0001 C CNN
+F 1 "GND" H 9105 1327 50  0000 C CNN
+F 2 "" H 9100 1500 50  0001 C CNN
+F 3 "" H 9100 1500 50  0001 C CNN
+	1    9100 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -173,7 +171,7 @@ AR Path="/6144DCFC/615C22B8" Ref="RV?"  Part="1"
 AR Path="/615C22B8" Ref="RV1"  Part="1" 
 F 0 "RV1" H 10181 1346 50  0000 R CNN
 F 1 "R_POT" H 10181 1255 50  0000 R CNN
-F 2 "" H 10250 1300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 10250 1300 50  0001 C CNN
 F 3 "~" H 10250 1300 50  0001 C CNN
 	1    10250 1300
 	1    0    0    -1  
@@ -225,7 +223,7 @@ P 7250 1100
 AR Path="/6158EAAB/615DA703" Ref="J?"  Part="1" 
 AR Path="/615DA703" Ref="J3"  Part="1" 
 F 0 "J3" H 7222 1074 50  0000 R CNN
-F 1 "Conn_01x08_Male" H 7222 983 50  0000 R CNN
+F 1 "KeypadConn" H 7222 983 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7250 1100 50  0001 C CNN
 F 3 "~" H 7250 1100 50  0001 C CNN
 	1    7250 1100
@@ -300,37 +298,22 @@ Wire Wire Line
 $Comp
 L power:VDD #PWR?
 U 1 1 615C22A9
-P 9000 850
+P 9100 950
 AR Path="/6144DCFC/615C22A9" Ref="#PWR?"  Part="1" 
 AR Path="/615C22A9" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 9000 700 50  0001 C CNN
-F 1 "VDD" H 9015 1023 50  0000 C CNN
-F 2 "" H 9000 850 50  0001 C CNN
-F 3 "" H 9000 850 50  0001 C CNN
-	1    9000 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP601-xP U?
-U 1 1 615C229E
-P 9100 1150
-AR Path="/6144DCFC/615C229E" Ref="U?"  Part="1" 
-AR Path="/615C229E" Ref="U2"  Part="1" 
-F 0 "U2" H 9444 1196 50  0000 L CNN
-F 1 "MCP601-xP" H 9100 1350 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 9000 950 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 9250 1300 50  0001 C CNN
-	1    9100 1150
+F 0 "#PWR08" H 9100 800 50  0001 C CNN
+F 1 "VDD" H 9115 1123 50  0000 C CNN
+F 2 "" H 9100 950 50  0001 C CNN
+F 3 "" H 9100 950 50  0001 C CNN
+	1    9100 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10500 3150 10500 3050
 Wire Wire Line
-	10500 3550 10500 3450
-Wire Wire Line
 	10500 3950 10500 4150
 Wire Wire Line
-	10500 2350 10500 2550
+	10500 2350 10500 2500
 $Comp
 L power:GND #PWR?
 U 1 1 61603AEE
@@ -347,14 +330,14 @@ $EndComp
 $Comp
 L Device:D_Zener D?
 U 1 1 61603AE8
-P 10500 3300
+P 9900 2800
 AR Path="/6154AAA6/61603AE8" Ref="D?"  Part="1" 
 AR Path="/61603AE8" Ref="D1"  Part="1" 
-F 0 "D1" V 10454 3379 50  0000 L CNN
-F 1 "D_Zener" V 10545 3379 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10500 3300 50  0001 C CNN
-F 3 "~" H 10500 3300 50  0001 C CNN
-	1    10500 3300
+F 0 "D1" V 9854 2879 50  0000 L CNN
+F 1 "D_Zener" V 9945 2879 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9900 2800 50  0001 C CNN
+F 3 "~" H 9900 2800 50  0001 C CNN
+	1    9900 2800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -661,49 +644,43 @@ Text Label 4400 3100 0    50   ~ 0
 SENSOR_VP
 Text Label 4400 3200 0    50   ~ 0
 SENSOR_VN
-Text Notes 4250 3750 0    50   ~ 0
-To Do:\nAre the signals \nabove and below \nbeing used anywhere?
 Text Label 6450 2900 1    50   ~ 0
 X
 $Comp
 L Device:C C1
 U 1 1 616B2876
-P 8650 3300
-F 0 "C1" H 8765 3346 50  0000 L CNN
-F 1 "100uF" H 8765 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8688 3150 50  0001 C CNN
-F 3 "~" H 8650 3300 50  0001 C CNN
-	1    8650 3300
+P 8800 3300
+F 0 "C1" H 8915 3346 50  0000 L CNN
+F 1 "100uF" H 8915 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8838 3150 50  0001 C CNN
+F 3 "~" H 8800 3300 50  0001 C CNN
+	1    8800 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VDD #PWR06
 U 1 1 616B30A6
-P 8650 2900
-F 0 "#PWR06" H 8650 2750 50  0001 C CNN
-F 1 "VDD" H 8667 3073 50  0000 C CNN
-F 2 "" H 8650 2900 50  0001 C CNN
-F 3 "" H 8650 2900 50  0001 C CNN
-	1    8650 2900
+P 8550 2850
+F 0 "#PWR06" H 8550 2700 50  0001 C CNN
+F 1 "VDD" H 8567 3023 50  0000 C CNN
+F 2 "" H 8550 2850 50  0001 C CNN
+F 3 "" H 8550 2850 50  0001 C CNN
+	1    8550 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 616B39C4
-P 8650 3650
-F 0 "#PWR07" H 8650 3400 50  0001 C CNN
-F 1 "GND" H 8655 3477 50  0000 C CNN
-F 2 "" H 8650 3650 50  0001 C CNN
-F 3 "" H 8650 3650 50  0001 C CNN
-	1    8650 3650
+P 8550 3650
+F 0 "#PWR07" H 8550 3400 50  0001 C CNN
+F 1 "GND" H 8555 3477 50  0000 C CNN
+F 2 "" H 8550 3650 50  0001 C CNN
+F 3 "" H 8550 3650 50  0001 C CNN
+	1    8550 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8650 2900 8650 3150
-Wire Wire Line
-	8650 3450 8650 3650
-Text Notes 8300 2400 0    50   ~ 0
-Supply Decoupling
+Text Notes 8200 2400 0    50   ~ 0
+Decoupling/Bulk Caps
 Wire Notes Line
 	8000 500  8000 6500
 Wire Notes Line
@@ -795,4 +772,159 @@ Wire Wire Line
 	1250 7000 1400 7000
 Text Label 1400 7000 1    50   ~ 0
 X
+Wire Wire Line
+	10500 2500 9900 2500
+Wire Wire Line
+	9900 2500 9900 2650
+Connection ~ 10500 2500
+Wire Wire Line
+	10500 2500 10500 2550
+Wire Wire Line
+	9900 2950 9900 3150
+Wire Wire Line
+	9900 3150 10500 3150
+Wire Wire Line
+	10500 3150 10500 3550
+Connection ~ 10500 3150
+$Comp
+L Connector:USB_B_Micro J11
+U 1 1 61591780
+P 4800 6800
+F 0 "J11" H 4857 7267 50  0000 C CNN
+F 1 "USB_B_Micro" H 4857 7176 50  0000 C CNN
+F 2 "" H 4950 6750 50  0001 C CNN
+F 3 "~" H 4950 6750 50  0001 C CNN
+	1    4800 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR047
+U 1 1 615925A2
+P 5350 6450
+F 0 "#PWR047" H 5350 6300 50  0001 C CNN
+F 1 "VBUS" H 5365 6623 50  0000 C CNN
+F 2 "" H 5350 6450 50  0001 C CNN
+F 3 "" H 5350 6450 50  0001 C CNN
+	1    5350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 61592DDE
+P 4800 7300
+F 0 "#PWR046" H 4800 7050 50  0001 C CNN
+F 1 "GND" H 4805 7127 50  0000 C CNN
+F 2 "" H 4800 7300 50  0001 C CNN
+F 3 "" H 4800 7300 50  0001 C CNN
+	1    4800 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 7200 4800 7200
+Wire Wire Line
+	4800 7300 4800 7200
+Connection ~ 4800 7200
+Wire Wire Line
+	5350 6600 5350 6450
+Wire Wire Line
+	5100 6600 5350 6600
+Wire Wire Line
+	900  4250 1500 4250
+Wire Wire Line
+	900  4350 1500 4350
+Wire Wire Line
+	900  4450 1500 4450
+Wire Wire Line
+	900  4550 1500 4550
+Wire Wire Line
+	900  4650 1500 4650
+Wire Wire Line
+	900  4750 1500 4750
+Text Label 900  4250 0    50   ~ 0
+SDO_SD0
+Text Label 900  4350 0    50   ~ 0
+SDI_SD1
+Text Label 900  4450 0    50   ~ 0
+SHD_SD2
+Text Label 900  4550 0    50   ~ 0
+SWP_SD3
+Text Label 900  4650 0    50   ~ 0
+SCK_CLK
+Text Label 900  4750 0    50   ~ 0
+SCS_CMD
+$Comp
+L Connector:Conn_01x06_Male J10
+U 1 1 615AFA5D
+P 1700 4550
+F 0 "J10" H 1672 4432 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 1672 4523 50  0000 R CNN
+F 2 "" H 1700 4550 50  0001 C CNN
+F 3 "~" H 1700 4550 50  0001 C CNN
+	1    1700 4550
+	-1   0    0    1   
+$EndComp
+Text Notes 1000 4000 0    50   ~ 0
+SWD Programming
+Wire Wire Line
+	9000 1500 9100 1500
+Wire Wire Line
+	9100 1350 9100 1500
+Connection ~ 9100 1500
+Wire Wire Line
+	9000 1400 9000 1500
+$Comp
+L grid:MCP608 U2
+U 1 1 6160D0C5
+P 9100 1150
+F 0 "U2" H 9444 1171 50  0000 L CNN
+F 1 "MCP608" H 9444 1080 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9100 1150 50  0001 C CNN
+F 3 "https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/11177f.pdf" H 9100 1150 50  0001 C CNN
+	1    9100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6160EB38
+P 3050 4350
+F 0 "H1" H 3150 4396 50  0000 L CNN
+F 1 "MountingHole" H 3150 4305 50  0000 L CNN
+F 2 "" H 3050 4350 50  0001 C CNN
+F 3 "~" H 3050 4350 50  0001 C CNN
+	1    3050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 616105C1
+P 8300 3300
+F 0 "C16" H 8415 3346 50  0000 L CNN
+F 1 "0.1uF" H 8415 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8338 3150 50  0001 C CNN
+F 3 "~" H 8300 3300 50  0001 C CNN
+	1    8300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3150 8300 3000
+Wire Wire Line
+	8300 3000 8550 3000
+Wire Wire Line
+	8800 3000 8800 3150
+Wire Wire Line
+	8550 3000 8550 2850
+Connection ~ 8550 3000
+Wire Wire Line
+	8550 3000 8800 3000
+Wire Wire Line
+	8300 3450 8300 3650
+Wire Wire Line
+	8300 3650 8550 3650
+Wire Wire Line
+	8800 3450 8800 3650
+Wire Wire Line
+	8800 3650 8550 3650
+Connection ~ 8550 3650
+Text Notes 7550 3400 0    50   ~ 0
+Is this the right \nvalue for \ndecoupling cap?
 $EndSCHEMATC
