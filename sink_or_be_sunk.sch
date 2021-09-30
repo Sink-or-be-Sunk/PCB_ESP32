@@ -791,4 +791,8 @@ Wire Notes Line
 	500  5000 4000 5000
 Wire Notes Line
 	4000 5000 4000 7750
+Wire Wire Line
+	1250 7000 1400 7000
+Text Label 1400 7000 1    50   ~ 0
+X
 $EndSCHEMATC
