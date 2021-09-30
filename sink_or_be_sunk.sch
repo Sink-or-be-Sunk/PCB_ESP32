@@ -202,7 +202,7 @@ AR Path="/6144DCFC/615C22C6" Ref="LS?"  Part="1"
 AR Path="/615C22C6" Ref="LS1"  Part="1" 
 F 0 "LS1" H 10850 1050 50  0000 L CNN
 F 1 "Speaker" H 10800 950 50  0000 L CNN
-F 2 "" H 10900 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 10900 1100 50  0001 C CNN
 F 3 "~" H 10890 1250 50  0001 C CNN
 	1    10900 1300
 	1    0    0    -1  
