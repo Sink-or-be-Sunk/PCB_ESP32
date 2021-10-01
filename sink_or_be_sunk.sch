@@ -27,91 +27,43 @@ $EndSheet
 Wire Notes Line
 	550  7750 550  6150
 Wire Notes Line
-	4050 7750 550  7750
-Wire Notes Line
 	4050 6150 4050 7750
-Text Notes 1300 6450 0    50   ~ 0
-Still a little unclear on wiring the audio jack\n- I know we really only need to use two pins, unsure of which two
-Text Label 1450 6850 1    50   ~ 0
-X
-Wire Wire Line
-	1300 6850 1450 6850
-Text Notes 1450 7700 2    50   ~ 0
-Re-using footprint\n for CUI_PJ-102
-Text Notes 2000 7150 0    50   ~ 0
+Text Notes 2350 7250 0    50   ~ 0
 This has the same foot print as SOT223
 Wire Wire Line
-	1550 6800 1950 6800
-Wire Wire Line
-	1550 6950 1550 6800
-Wire Wire Line
-	1300 6950 1550 6950
-Text Label 1750 6900 1    50   ~ 0
-X
-Wire Wire Line
-	1950 6900 1750 6900
-Wire Wire Line
-	1750 7000 1750 7300
-Wire Wire Line
-	1950 7000 1750 7000
+	2300 7100 2100 7100
 $Comp
 L power:GND #PWR0102
 U 1 1 61719FB5
-P 1750 7300
-F 0 "#PWR0102" H 1750 7050 50  0001 C CNN
-F 1 "GND" H 1755 7127 50  0000 C CNN
-F 2 "" H 1750 7300 50  0001 C CNN
-F 3 "" H 1750 7300 50  0001 C CNN
-	1    1750 7300
+P 2100 7100
+F 0 "#PWR0102" H 2100 6850 50  0001 C CNN
+F 1 "GND" H 2105 6927 50  0000 C CNN
+F 2 "" H 2100 7100 50  0001 C CNN
+F 3 "" H 2100 7100 50  0001 C CNN
+	1    2100 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 61719CD4
-P 3150 6900
-F 0 "#PWR0101" H 3150 6750 50  0001 C CNN
-F 1 "+3.3V" H 3165 7073 50  0000 C CNN
-F 2 "" H 3150 6900 50  0001 C CNN
-F 3 "" H 3150 6900 50  0001 C CNN
-	1    3150 6900
+P 3200 6850
+F 0 "#PWR0101" H 3200 6700 50  0001 C CNN
+F 1 "+3.3V" H 3215 7023 50  0000 C CNN
+F 2 "" H 3200 6850 50  0001 C CNN
+F 3 "" H 3200 6850 50  0001 C CNN
+	1    3200 6850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 6900 3150 6900
 $Comp
 L grid:LDL1117-SMD U6
 U 1 1 61709846
-P 2300 6900
-F 0 "U6" H 2300 6585 50  0000 C CNN
-F 1 "LDL1117-SMD" H 2300 6676 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 2300 6900 50  0001 C CNN
-F 3 "" H 2300 6900 50  0001 C CNN
-	1    2300 6900
+P 2650 7000
+F 0 "U6" H 2650 6685 50  0000 C CNN
+F 1 "LDL1117-SMD" H 2650 6776 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2650 7000 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/group3/0e/5a/00/ca/10/1a/4f/a5/DM00366442/files/DM00366442.pdf/jcr:content/translations/en.DM00366442.pdf" H 2650 7000 50  0001 C CNN
+	1    2650 7000
 	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1100 7150 1100 7300
-$Comp
-L power:GND #PWR01
-U 1 1 616EBF45
-P 1100 7300
-F 0 "#PWR01" H 1100 7050 50  0001 C CNN
-F 1 "GND" H 1105 7127 50  0000 C CNN
-F 2 "" H 1100 7300 50  0001 C CNN
-F 3 "" H 1100 7300 50  0001 C CNN
-	1    1100 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack2_Ground J1
-U 1 1 616EAF5F
-P 1100 6950
-F 0 "J1" H 1132 7275 50  0000 C CNN
-F 1 "AudioJack2_Ground" H 1132 7184 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1100 6950 50  0001 C CNN
-F 3 "~" H 1100 6950 50  0001 C CNN
-	1    1100 6950
-	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	6800 550  6800 3350
@@ -146,8 +98,6 @@ F 3 "" H 9650 3050 50  0001 C CNN
 	1    9650 3050
 	1    0    0    -1  
 $EndComp
-Text Label 9850 800  1    50   ~ 0
-X
 Wire Wire Line
 	9850 1000 9850 800 
 Connection ~ 9450 950 
@@ -198,7 +148,7 @@ L Device:C C17
 U 1 1 616828EF
 P 8550 1300
 F 0 "C17" V 8298 1300 50  0000 C CNN
-F 1 "C" V 8389 1300 50  0000 C CNN
+F 1 "10uF" V 8389 1300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8588 1150 50  0001 C CNN
 F 3 "~" H 8550 1300 50  0001 C CNN
 	1    8550 1300
@@ -219,8 +169,6 @@ Text Label 7750 1800 2    50   ~ 0
 D+
 Text Label 7750 1700 2    50   ~ 0
 D+
-Text Label 7800 1900 1    50   ~ 0
-X
 Wire Wire Line
 	7600 1900 7800 1900
 Connection ~ 7300 2100
@@ -466,7 +414,7 @@ L Connector:Conn_01x08_Male J4
 U 1 1 616430A2
 P 3400 5450
 F 0 "J4" H 3300 5050 50  0000 R CNN
-F 1 "Conn_01x08_Male" H 3750 4950 50  0000 R CNN
+F 1 "Mux_Conn" H 3750 4950 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3400 5450 50  0001 C CNN
 F 3 "~" H 3400 5450 50  0001 C CNN
 	1    3400 5450
@@ -747,7 +695,7 @@ P 5750 5350
 AR Path="/6158EAAB/615DA703" Ref="J?"  Part="1" 
 AR Path="/615DA703" Ref="J3"  Part="1" 
 F 0 "J3" H 5722 5324 50  0000 R CNN
-F 1 "KeypadConn" H 5722 5233 50  0000 R CNN
+F 1 "Keypad_Conn" H 5722 5233 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5750 5350 50  0001 C CNN
 F 3 "~" H 5750 5350 50  0001 C CNN
 	1    5750 5350
@@ -1174,16 +1122,10 @@ Wire Wire Line
 Wire Wire Line
 	2800 1850 2550 1850
 Connection ~ 2550 1850
-Text Notes 2250 2400 0    50   ~ 0
-Is this the right \nvalue for \ndecoupling cap?
-Wire Notes Line
-	2100 550  2100 2450
-Wire Notes Line
-	3150 2450 3150 550 
 Wire Notes Line
 	3150 550  2100 550 
 Wire Notes Line
-	2100 2450 3150 2450
+	2100 2150 3150 2150
 Wire Notes Line
 	2250 3400 2250 2600
 Wire Notes Line
@@ -1221,7 +1163,7 @@ L Connector:Conn_01x06_Male J10
 U 1 1 615AFA5D
 P 1450 3150
 F 0 "J10" H 1422 3032 50  0000 R CNN
-F 1 "Conn_01x06_Male" H 1422 3123 50  0000 R CNN
+F 1 "SWD_Conn" H 1422 3123 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1450 3150 50  0001 C CNN
 F 3 "~" H 1450 3150 50  0001 C CNN
 	1    1450 3150
@@ -1245,4 +1187,126 @@ Wire Notes Line
 	6900 6150 6900 7750
 Wire Notes Line
 	4100 6150 4100 7750
+Wire Notes Line
+	2100 550  2100 2150
+Wire Notes Line
+	3150 2150 3150 550 
+NoConn ~ 7800 1900
+Wire Notes Line
+	4050 7750 550  7750
+NoConn ~ 9850 800 
+NoConn ~ 8950 2100
+NoConn ~ 8950 2200
+NoConn ~ 8950 2300
+NoConn ~ 8950 2400
+NoConn ~ 8950 2600
+NoConn ~ 10350 2600
+NoConn ~ 10350 2500
+NoConn ~ 10350 2400
+NoConn ~ 10350 2200
+NoConn ~ 10350 1600
+NoConn ~ 10350 1300
+NoConn ~ 10350 1400
+$Comp
+L Device:C C?
+U 1 1 6167094D
+P 1300 7000
+F 0 "C?" H 1415 7046 50  0000 L CNN
+F 1 "1uF" H 1415 6955 50  0000 L CNN
+F 2 "" H 1338 6850 50  0001 C CNN
+F 3 "~" H 1300 7000 50  0001 C CNN
+	1    1300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61670E32
+P 750 7000
+F 0 "C?" H 865 7046 50  0000 L CNN
+F 1 "4.7uF" H 865 6955 50  0000 L CNN
+F 2 "" H 788 6850 50  0001 C CNN
+F 3 "~" H 750 7000 50  0001 C CNN
+	1    750  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 616721DB
+P 2100 6850
+F 0 "#PWR?" H 2100 6700 50  0001 C CNN
+F 1 "VBUS" H 2115 7023 50  0000 C CNN
+F 2 "" H 2100 6850 50  0001 C CNN
+F 3 "" H 2100 6850 50  0001 C CNN
+	1    2100 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6900 2100 6900
+Wire Wire Line
+	2100 6900 2100 6850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6167C772
+P 1800 6850
+F 0 "#PWR?" H 1800 6700 50  0001 C CNN
+F 1 "+3.3V" H 1815 7023 50  0000 C CNN
+F 2 "" H 1800 6850 50  0001 C CNN
+F 3 "" H 1800 6850 50  0001 C CNN
+	1    1800 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 7000 1800 7000
+Wire Wire Line
+	1800 7000 1800 6850
+Wire Wire Line
+	3000 7000 3200 7000
+Wire Wire Line
+	3200 7000 3200 6850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 616A7949
+P 1300 6850
+F 0 "#PWR?" H 1300 6700 50  0001 C CNN
+F 1 "+3.3V" H 1315 7023 50  0000 C CNN
+F 2 "" H 1300 6850 50  0001 C CNN
+F 3 "" H 1300 6850 50  0001 C CNN
+	1    1300 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 616A8066
+P 750 6850
+F 0 "#PWR?" H 750 6700 50  0001 C CNN
+F 1 "VBUS" H 765 7023 50  0000 C CNN
+F 2 "" H 750 6850 50  0001 C CNN
+F 3 "" H 750 6850 50  0001 C CNN
+	1    750  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616A84D9
+P 750 7150
+F 0 "#PWR?" H 750 6900 50  0001 C CNN
+F 1 "GND" H 755 6977 50  0000 C CNN
+F 2 "" H 750 7150 50  0001 C CNN
+F 3 "" H 750 7150 50  0001 C CNN
+	1    750  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616A88B6
+P 1300 7150
+F 0 "#PWR?" H 1300 6900 50  0001 C CNN
+F 1 "GND" H 1305 6977 50  0000 C CNN
+F 2 "" H 1300 7150 50  0001 C CNN
+F 3 "" H 1300 7150 50  0001 C CNN
+	1    1300 7150
+	1    0    0    -1  
+$EndComp
+Text Notes 700  6450 0    50   ~ 0
+See Datasheet for Recommended Schematic
 $EndSCHEMATC
