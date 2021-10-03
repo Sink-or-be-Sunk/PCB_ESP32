@@ -13,16 +13,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes -4250 2150 0    50   ~ 0
-TODO: \n\n- Connect the sheets \n(mitch, you might have to help me with this)\n\n- Double check schematic for audio jack\n\n- footprints for speaker/pot DONE\n\n- add swd programming pins DONE\n\n- add usb programming follow circuit \nhttps://cdn-learn.adafruit.com/assets/assets/000/041/630/original/feather_schem.png?1494449413\n\n- maybe add an external ocillator spot like they suggested?\n\n- add mounting holes (check size of standoff for footprint) DONE\n
-Text Notes -3750 3300 0    50   ~ 0
+Text Notes -2800 2100 0    50   ~ 0
+TODO: \n\n- Connect the sheets \n(mitch, you might have to help me with this)\n\n- maybe add an external ocillator spot like they suggested?\n\n- Add a voltage src (probably a boost converter) for the 5V motor
+Text Notes -2300 3250 0    50   ~ 0
 Left the STM stuff here for reference.  \nDelete later
 $Sheet
-S -3800 2750 1650 650 
+S -2350 2700 1650 650 
 U 613246BD
 F0 "STM32" 50
 F1 "STM32.sch" 50
-F2 "MUX_SEL0" O L -3800 2950 50 
+F2 "MUX_SEL0" O L -2350 2900 50 
 $EndSheet
 Wire Wire Line
 	2300 5000 2100 5000
@@ -108,17 +108,6 @@ Wire Wire Line
 	7050 3800 7050 3950
 Wire Wire Line
 	7650 3800 7050 3800
-$Comp
-L power:+5V #PWR012
-U 1 1 61634A43
-P 7650 3650
-F 0 "#PWR012" H 7650 3500 50  0001 C CNN
-F 1 "+5V" H 7665 3823 50  0000 C CNN
-F 2 "" H 7650 3650 50  0001 C CNN
-F 3 "" H 7650 3650 50  0001 C CNN
-	1    7650 3650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_FET:IRLML5203 Q?
 U 1 1 61603ADB
@@ -1737,4 +1726,15 @@ Text Notes 650  5800 0    50   ~ 0
 Ship Select
 Text Notes 700  4200 0    50   ~ 0
 Power and Filtering
+$Comp
+L power:VBUS #PWR?
+U 1 1 615AEF27
+P 7650 3650
+F 0 "#PWR?" H 7650 3500 50  0001 C CNN
+F 1 "VBUS" H 7665 3823 50  0000 C CNN
+F 2 "" H 7650 3650 50  0001 C CNN
+F 3 "" H 7650 3650 50  0001 C CNN
+	1    7650 3650
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
