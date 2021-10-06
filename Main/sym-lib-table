@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name grid)(type Legacy)(uri "C:/Users/molly/Desktop/Senior Year/First Semester/Senior Design/Sink or Be Sunk repo/PCB_ESP32/grid.lib")(options "")(descr ""))
-  (lib (name sink_or_be_sunk-rescue)(type Legacy)(uri "C:/Users/molly/Desktop/Senior Year/First Semester/Senior Design/Sink or Be Sunk repo/PCB_ESP32/sink_or_be_sunk-rescue.lib")(options "")(descr ""))
-  (lib (name Main)(type Legacy)(uri ${KIPRJMOD}/Main.lib)(options "")(descr ""))
-)
