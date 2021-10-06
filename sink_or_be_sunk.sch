@@ -126,19 +126,6 @@ F 3 "~" H 7650 3960 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Zener D?
-U 1 1 61603AE8
-P 7050 4100
-AR Path="/6154AAA6/61603AE8" Ref="D?"  Part="1" 
-AR Path="/61603AE8" Ref="D2"  Part="1" 
-F 0 "D2" V 7004 4179 50  0000 L CNN
-F 1 "D_Zener" V 7095 4179 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7050 4100 50  0001 C CNN
-F 3 "~" H 7050 4100 50  0001 C CNN
-	1    7050 4100
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 61603AEE
 P 7650 5200
@@ -275,8 +262,6 @@ Wire Wire Line
 	5650 5050 5900 5050
 Wire Wire Line
 	5650 4900 5650 5050
-Wire Wire Line
-	5800 4750 6100 4750
 $Comp
 L Device:Speaker LS?
 U 1 1 615C22C6
@@ -348,30 +333,6 @@ Text Label 3600 1250 0    50   ~ 0
 SENSOR_VP
 Text Label 3600 1050 0    50   ~ 0
 RESET
-Text Label 3600 2750 0    50   ~ 0
-SCS_CMD
-Text Label 3600 2650 0    50   ~ 0
-SCK_CLK
-Text Label 3600 2550 0    50   ~ 0
-SWP_SD3
-Text Label 3600 2450 0    50   ~ 0
-SHD_SD2
-Text Label 3600 2350 0    50   ~ 0
-SDI_SD1
-Text Label 3600 2250 0    50   ~ 0
-SDO_SD0
-Wire Wire Line
-	3600 2750 4200 2750
-Wire Wire Line
-	3600 2650 4200 2650
-Wire Wire Line
-	3600 2550 4200 2550
-Wire Wire Line
-	3600 2450 4200 2450
-Wire Wire Line
-	3600 2350 4200 2350
-Wire Wire Line
-	3600 2250 4200 2250
 Wire Wire Line
 	3600 1350 4200 1350
 Wire Wire Line
@@ -415,10 +376,10 @@ Text Label 6150 1250 2    50   ~ 0
 MUX_COL_SEL0
 Wire Wire Line
 	5400 1250 6150 1250
-Text Label 6150 1650 2    50   ~ 0
+Text Label 3450 2350 0    50   ~ 0
 LED_OUT
 Wire Wire Line
-	5400 1650 6150 1650
+	4200 2350 3450 2350
 Text Label 6150 3150 2    50   ~ 0
 KEYPAD_COL3
 Wire Wire Line
@@ -455,18 +416,18 @@ Text Label 6150 2750 2    50   ~ 0
 SPEAKER
 Wire Wire Line
 	5400 2750 6150 2750
-Text Label 6150 1950 2    50   ~ 0
+Text Label 3450 2750 0    50   ~ 0
 LCD_CS
 Wire Wire Line
-	5400 1950 6150 1950
-Text Label 6150 1850 2    50   ~ 0
+	4200 2750 3450 2750
+Text Label 3450 2650 0    50   ~ 0
 LCD_SCLK
 Wire Wire Line
-	5400 1850 6150 1850
-Text Label 6150 1750 2    50   ~ 0
+	4200 2650 3450 2650
+Text Label 3450 2250 0    50   ~ 0
 LCD_MOSI
 Wire Wire Line
-	5400 1750 6150 1750
+	4200 2250 3450 2250
 Text Label 6150 2650 2    50   ~ 0
 MUX_ROW_SEL2
 Wire Wire Line
@@ -520,7 +481,7 @@ U 1 1 616B2876
 P 7650 6100
 F 0 "C7" H 7765 6146 50  0000 L CNN
 F 1 "100uF" H 7765 6055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7688 5950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7688 5950 50  0001 C CNN
 F 3 "~" H 7650 6100 50  0001 C CNN
 	1    7650 6100
 	1    0    0    -1  
@@ -554,12 +515,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 6250 7400 6250
 Connection ~ 7400 6250
-Text Label 2900 1400 2    50   ~ 0
-SCS_CMD
-Wire Wire Line
-	2900 1400 2300 1400
-Wire Wire Line
-	2900 900  2300 900 
 Wire Wire Line
 	2900 1000 2300 1000
 Wire Wire Line
@@ -568,23 +523,21 @@ Wire Wire Line
 	2900 1200 2300 1200
 Wire Wire Line
 	2900 1300 2300 1300
-Text Label 2900 900  2    50   ~ 0
-SDO_SD0
 Text Label 2900 1000 2    50   ~ 0
-SDI_SD1
+MTDO
 Text Label 2900 1100 2    50   ~ 0
-SHD_SD2
+MTCK
 Text Label 2900 1200 2    50   ~ 0
-SWP_SD3
+MTDI
 Text Label 2900 1300 2    50   ~ 0
-SCK_CLK
+MTMS
 $Comp
-L Connector:Conn_01x06_Male J4
+L Connector:Conn_01x04_Male J4
 U 1 1 615AFA5D
 P 2100 1200
 F 0 "J4" H 2150 650 50  0000 R CNN
-F 1 "SWD_Conn" H 2300 750 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2100 1200 50  0001 C CNN
+F 1 "JTAG_Conn" H 2300 750 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2100 1200 50  0001 C CNN
 F 3 "~" H 2100 1200 50  0001 C CNN
 	1    2100 1200
 	1    0    0    1   
@@ -1103,7 +1056,7 @@ AR Path="/6154E4DA/61628C20" Ref="U?"  Part="1"
 AR Path="/61628C20" Ref="U1"  Part="1" 
 F 0 "U1" H 2000 5885 50  0000 C CNN
 F 1 "SN74HC151N" H 2000 5976 50  0000 C CNN
-F 2 "PCB_ESP32:SN74HC151N-PDIP" H 2050 6450 50  0001 C CNN
+F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6450 50  0001 C CNN
 F 3 "" H 2050 6450 50  0001 C CNN
 	1    2000 6450
 	-1   0    0    1   
@@ -1610,17 +1563,15 @@ Wire Notes Line
 	6700 7150 6700 5650
 Wire Notes Line
 	6700 5650 3600 5650
-Text Notes 8400 5800 0    50   ~ 0
-Using 7/16” standoff \n(11.13mm tall, 6.35mm diam)
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 6160EB38
-P 8500 6000
-F 0 "H1" H 8600 6046 50  0000 L CNN
-F 1 "MountingHole" H 8600 5955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8500 6000 50  0001 C CNN
-F 3 "~" H 8500 6000 50  0001 C CNN
-	1    8500 6000
+P 8500 5900
+F 0 "H1" H 8600 5946 50  0000 L CNN
+F 1 "MountingHole" H 8600 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8500 5900 50  0001 C CNN
+F 3 "~" H 8500 5900 50  0001 C CNN
+	1    8500 5900
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1669,34 +1620,34 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 615F8D16
-P 8500 6250
-F 0 "H2" H 8600 6296 50  0000 L CNN
-F 1 "MountingHole" H 8600 6205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8500 6250 50  0001 C CNN
-F 3 "~" H 8500 6250 50  0001 C CNN
-	1    8500 6250
+P 8500 6150
+F 0 "H2" H 8600 6196 50  0000 L CNN
+F 1 "MountingHole" H 8600 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8500 6150 50  0001 C CNN
+F 3 "~" H 8500 6150 50  0001 C CNN
+	1    8500 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 615F8FBE
-P 9250 6000
-F 0 "H3" H 9350 6046 50  0000 L CNN
-F 1 "MountingHole" H 9350 5955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 6000 50  0001 C CNN
-F 3 "~" H 9250 6000 50  0001 C CNN
-	1    9250 6000
+P 9250 5900
+F 0 "H3" H 9350 5946 50  0000 L CNN
+F 1 "MountingHole" H 9350 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 5900 50  0001 C CNN
+F 3 "~" H 9250 5900 50  0001 C CNN
+	1    9250 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 615F94F8
-P 9250 6250
-F 0 "H4" H 9350 6296 50  0000 L CNN
-F 1 "MountingHole" H 9350 6205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 6250 50  0001 C CNN
-F 3 "~" H 9250 6250 50  0001 C CNN
-	1    9250 6250
+P 9250 6150
+F 0 "H4" H 9350 6196 50  0000 L CNN
+F 1 "MountingHole" H 9350 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 6150 50  0001 C CNN
+F 3 "~" H 9250 6150 50  0001 C CNN
+	1    9250 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1739,4 +1690,42 @@ F 3 "~" H 2500 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 3450 2700 3550
+Wire Wire Line
+	6150 1650 5400 1650
+Text Label 6150 1650 2    50   ~ 0
+MTDI
+Wire Wire Line
+	6150 1750 5400 1750
+Text Label 6150 1750 2    50   ~ 0
+MTCK
+Wire Wire Line
+	6150 1850 5400 1850
+Text Label 6150 1850 2    50   ~ 0
+MTMS
+Wire Wire Line
+	6150 1950 5400 1950
+Text Label 6150 1950 2    50   ~ 0
+MTDO
+$Comp
+L Device:D D2
+U 1 1 616C0DF1
+P 7050 4100
+F 0 "D2" V 7004 4180 50  0000 L CNN
+F 1 "D" V 7095 4180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 7050 4100 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 7050 4100 50  0001 C CNN
+	1    7050 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 616DDA5F
+P 5950 4750
+F 0 "C12" V 5698 4750 50  0000 C CNN
+F 1 "10uF" V 5789 4750 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 5988 4600 50  0001 C CNN
+F 3 "~" H 5950 4750 50  0001 C CNN
+	1    5950 4750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
