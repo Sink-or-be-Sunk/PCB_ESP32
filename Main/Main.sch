@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Main Layout"
-Date "2021-09-01"
-Rev "1"
-Comp "Sink or be Sunk"
+Title ""
+Date ""
+Rev ""
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -899,17 +899,6 @@ F 3 "" H 9000 900 50  0001 C CNN
 	1    9000 900 
 	-1   0    0    -1  
 $EndComp
-$Comp
-L sink_or_be_sunk-rescue:USB_B_Micro-Connector J11
-U 1 1 61591780
-P 9750 1250
-F 0 "J11" H 9807 1717 50  0000 C CNN
-F 1 "USB_B_Micro" H 9807 1626 50  0000 C CNN
-F 2 "digikey-footprints:USB_Micro_B_Female_Vert_1051330001" H 9900 1200 50  0001 C CNN
-F 3 "~" H 9900 1200 50  0001 C CNN
-	1    9750 1250
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 9250 1450
 $Comp
 L Device:LED D4
@@ -964,16 +953,11 @@ Wire Wire Line
 	9000 1050 9450 1050
 Wire Wire Line
 	9000 1800 9000 1750
-Wire Wire Line
-	9850 1650 9850 1750
-Wire Wire Line
-	9850 1750 9750 1750
 Connection ~ 9000 1750
 Wire Wire Line
 	9000 1750 9000 1700
 Wire Wire Line
 	9750 1650 9750 1750
-Connection ~ 9750 1750
 Wire Wire Line
 	9750 1750 9000 1750
 $Comp
@@ -1160,7 +1144,7 @@ AR Path="/6154E4DA/61628C20" Ref="U?"  Part="1"
 AR Path="/61628C20" Ref="U3"  Part="1" 
 F 0 "U3" H 2000 5885 50  0000 C CNN
 F 1 "SN74HC151N" H 2000 5976 50  0000 C CNN
-F 2 "PCB_ESP32:SN74HC151N-PDIP" H 2050 6450 50  0001 C CNN
+F 2 "Main:SN74HC151N-PDIP" H 2050 6450 50  0001 C CNN
 F 3 "" H 2050 6450 50  0001 C CNN
 	1    2000 6450
 	-1   0    0    1   
@@ -1359,7 +1343,7 @@ U 1 1 62275C07
 P 6300 6450
 F 0 "C24" H 6415 6496 50  0000 L CNN
 F 1 "4.7uF" H 6415 6405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6338 6300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 6300 50  0001 C CNN
 F 3 "~" H 6300 6450 50  0001 C CNN
 	1    6300 6450
 	1    0    0    -1  
@@ -1436,7 +1420,7 @@ U 1 1 6227BFE5
 P 5750 6450
 F 0 "C23" H 5865 6496 50  0000 L CNN
 F 1 "4.7uF" H 5865 6405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5788 6300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5788 6300 50  0001 C CNN
 F 3 "~" H 5750 6450 50  0001 C CNN
 	1    5750 6450
 	1    0    0    -1  
@@ -1543,7 +1527,7 @@ U 1 1 623E1E61
 P 10750 4550
 F 0 "C25" H 10865 4596 50  0000 L CNN
 F 1 "1uF" H 10865 4505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10788 4400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10788 4400 50  0001 C CNN
 F 3 "~" H 10750 4550 50  0001 C CNN
 	1    10750 4550
 	1    0    0    -1  
@@ -1726,6 +1710,17 @@ F 1 "VBUS" H 7665 3823 50  0000 C CNN
 F 2 "" H 7650 3650 50  0001 C CNN
 F 3 "" H 7650 3650 50  0001 C CNN
 	1    7650 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Main:USB_B_Micro J5
+U 1 1 6163041A
+P 9750 1250
+F 0 "J5" H 9520 1239 50  0000 R CNN
+F 1 "USB_B_Micro" H 9520 1148 50  0000 R CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_Vert_1051330001" H 9900 1200 50  0001 C CNN
+F 3 "~" H 9900 1200 50  0001 C CNN
+	1    9750 1250
 	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
