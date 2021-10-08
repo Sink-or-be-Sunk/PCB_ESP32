@@ -1361,12 +1361,6 @@ Connection ~ 9800 850
 Connection ~ 9200 750 
 Wire Wire Line
 	9200 750  8700 750 
-Wire Wire Line
-	9750 950  9750 850 
-Wire Wire Line
-	9750 850  9200 850 
-Wire Wire Line
-	9750 950  9800 950 
 Connection ~ 9800 950 
 Wire Wire Line
 	9800 950  10300 950 
@@ -1375,13 +1369,6 @@ Wire Wire Line
 	10300 950  10800 950 
 Wire Wire Line
 	10800 1050 10300 1050
-Wire Wire Line
-	9700 1050 9700 950 
-Wire Wire Line
-	9700 950  9200 950 
-Connection ~ 9800 1050
-Wire Wire Line
-	9800 1050 9700 1050
 Connection ~ 10300 1050
 Wire Wire Line
 	10300 1050 9800 1050
@@ -1398,25 +1385,12 @@ Wire Wire Line
 	10300 1350 9800 1350
 Wire Wire Line
 	10800 1150 10300 1150
-Wire Wire Line
-	9650 1150 9650 1050
-Wire Wire Line
-	9650 1050 9200 1050
-Connection ~ 9800 1150
-Wire Wire Line
-	9800 1150 9650 1150
 Connection ~ 10300 1150
 Wire Wire Line
 	10300 1150 9800 1150
 Wire Wire Line
 	10800 1250 10300 1250
-Wire Wire Line
-	9600 1250 9600 1150
-Wire Wire Line
-	9600 1150 9200 1150
 Connection ~ 9800 1250
-Wire Wire Line
-	9800 1250 9600 1250
 Connection ~ 10300 1250
 Wire Wire Line
 	10300 1250 9800 1250
@@ -2599,8 +2573,18 @@ Wire Wire Line
 	5650 -2400 6400 -2400
 Wire Wire Line
 	6400 -3000 5650 -3000
-Connection ~ 9200 850 
+Wire Wire Line
+	9200 950  9800 950 
 Connection ~ 9200 950 
+Wire Wire Line
+	9200 1050 9800 1050
 Connection ~ 9200 1050
+Connection ~ 9800 1050
+Wire Wire Line
+	9800 1150 9200 1150
+Connection ~ 9800 1150
 Connection ~ 9200 1150
+Wire Wire Line
+	9200 1250 9800 1250
+Connection ~ 9200 1250
 $EndSCHEMATC
