@@ -254,80 +254,6 @@ F 3 "" H 4750 4900 50  0001 C CNN
 	1    4750 4900
 	1    0    0    -1  
 $EndComp
-Text Label 4300 1050 0    50   ~ 0
-RESET
-$Comp
-L power:+3.3V #PWR017
-U 1 1 61631CE3
-P 5450 850
-F 0 "#PWR017" H 5450 700 50  0001 C CNN
-F 1 "+3.3V" H 5465 1023 50  0000 C CNN
-F 2 "" H 5450 850 50  0001 C CNN
-F 3 "" H 5450 850 50  0001 C CNN
-	1    5450 850 
-	1    0    0    -1  
-$EndComp
-Text Label 6800 1450 2    50   ~ 0
-MOTOR
-Wire Wire Line
-	6050 1450 6800 1450
-Text Notes 6150 3600 0    50   ~ 0
-DAC1 is IO25,\nDAC2 is IO26
-Text Label 6800 2050 2    50   ~ 0
-BOAT_INPUT
-Wire Wire Line
-	6050 2050 6800 2050
-Wire Wire Line
-	6050 1150 6800 1150
-Wire Wire Line
-	6050 1350 6800 1350
-Text Label 6800 2250 2    50   ~ 0
-MUX_COL_SEL0
-Wire Wire Line
-	6050 2250 6800 2250
-Text Label 6800 2650 2    50   ~ 0
-LED_OUT
-Wire Wire Line
-	6050 2650 6800 2650
-Text Label 4300 2350 0    50   ~ 0
-KEYPAD_COL1
-Text Label 6800 1250 2    50   ~ 0
-KEYPAD_COL0
-Wire Wire Line
-	6050 1250 6800 1250
-Text Label 6800 3050 2    50   ~ 0
-KEYPAD_ROW3
-Wire Wire Line
-	6050 3050 6800 3050
-Text Label 6800 3150 2    50   ~ 0
-KEYPAD_ROW2
-Wire Wire Line
-	6050 3150 6800 3150
-Text Label 6800 2850 2    50   ~ 0
-KEYPAD_ROW1
-Wire Wire Line
-	6050 2850 6800 2850
-Text Label 6800 2950 2    50   ~ 0
-KEYPAD_ROW0
-Wire Wire Line
-	6050 2950 6800 2950
-Text Label 6800 2750 2    50   ~ 0
-SPEAKER
-Wire Wire Line
-	6050 2750 6800 2750
-Text Label 4300 2250 0    50   ~ 0
-LCD_MOSI
-$Comp
-L power:GND #PWR018
-U 1 1 61478793
-P 5450 3650
-F 0 "#PWR018" H 5450 3400 50  0001 C CNN
-F 1 "GND" H 5455 3477 50  0000 C CNN
-F 2 "" H 5450 3650 50  0001 C CNN
-F 3 "" H 5450 3650 50  0001 C CNN
-	1    5450 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 4450 4450 4450
 Wire Wire Line
@@ -373,28 +299,6 @@ NoConn ~ 8750 5150
 NoConn ~ 8750 5050
 NoConn ~ 7400 5450
 NoConn ~ 7400 5550
-$Comp
-L Device:C C2
-U 1 1 6167094D
-P 1300 4550
-F 0 "C2" H 1415 4596 50  0000 L CNN
-F 1 "1uF" H 1415 4505 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 1338 4400 50  0001 C CNN
-F 3 "~" H 1300 4550 50  0001 C CNN
-	1    1300 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 61670E32
-P 750 4550
-F 0 "C1" H 865 4596 50  0000 L CNN
-F 1 "4.7uF" H 865 4505 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 788 4400 50  0001 C CNN
-F 3 "~" H 750 4550 50  0001 C CNN
-	1    750  4550
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR04
 U 1 1 616A7949
@@ -624,10 +528,6 @@ F 3 "" H 10550 5500 50  0001 C CNN
 	1    10550 5500
 	-1   0    0    -1  
 $EndComp
-Text Label 6800 1350 2    50   ~ 0
-RXD0
-Text Label 6800 1150 2    50   ~ 0
-TXD0
 Wire Wire Line
 	8750 4750 9700 4750
 Wire Wire Line
@@ -911,17 +811,6 @@ F 3 "" H 6300 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
-U 1 1 6227BFE5
-P 5750 6200
-F 0 "C3" H 5865 6246 50  0000 L CNN
-F 1 "4.7uF" H 5865 6155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5788 6050 50  0001 C CNN
-F 3 "~" H 5750 6200 50  0001 C CNN
-	1    5750 6200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR022
 U 1 1 6227BFF1
 P 5750 6350
@@ -943,17 +832,6 @@ F 3 "" H 5750 6050 50  0001 C CNN
 	1    5750 6050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+BATT #PWR09
-U 1 1 622D2577
-P 2300 3550
-F 0 "#PWR09" H 2300 3400 50  0001 C CNN
-F 1 "+BATT" H 2300 3700 50  0000 C CNN
-F 2 "" H 2300 3550 50  0001 C CNN
-F 3 "" H 2300 3550 50  0001 C CNN
-	1    2300 3550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4000 6300 4000 6700
 Wire Wire Line
@@ -966,17 +844,6 @@ Wire Wire Line
 	4400 5700 4400 5900
 Wire Wire Line
 	4800 5700 4400 5700
-$Comp
-L power:GND #PWR010
-U 1 1 6239E5F9
-P 2300 3350
-F 0 "#PWR010" H 2300 3100 50  0001 C CNN
-F 1 "GND" H 2305 3177 50  0000 C CNN
-F 2 "" H 2300 3350 50  0001 C CNN
-F 3 "" H 2300 3350 50  0001 C CNN
-	1    2300 3350
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:+BATT #PWR020
 U 1 1 623AD776
@@ -1170,76 +1037,6 @@ F 3 "" H 4750 4350 50  0001 C CNN
 	1    4750 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 1650 6050 1650
-Text Label 6800 1650 2    50   ~ 0
-MTDI
-Wire Wire Line
-	6800 1750 6050 1750
-Text Label 6800 1750 2    50   ~ 0
-MTCK
-Wire Wire Line
-	6800 1850 6050 1850
-Text Label 6800 1850 2    50   ~ 0
-MTMS
-$Comp
-L Device:D D2
-U 1 1 616C0DF1
-P 2350 7150
-F 0 "D2" H 2150 7100 50  0000 L CNN
-F 1 "D" H 2450 7100 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2350 7150 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2350 7150 50  0001 C CNN
-	1    2350 7150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 616DDA5F
-P 5700 4700
-F 0 "C12" V 5448 4700 50  0000 C CNN
-F 1 "10uF" V 5539 4700 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5738 4550 50  0001 C CNN
-F 3 "~" H 5700 4700 50  0001 C CNN
-	1    5700 4700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6050 2550 6800 2550
-Text Label 6800 2350 2    50   ~ 0
-MUX_ROW_SEL0
-Wire Wire Line
-	6050 2450 6800 2450
-Text Label 6800 2450 2    50   ~ 0
-MUX_ROW_SEL1
-Wire Wire Line
-	6050 2350 6800 2350
-Text Label 6800 2550 2    50   ~ 0
-MUX_ROW_SEL2
-Wire Wire Line
-	6050 1550 6800 1550
-Text Label 6800 1550 2    50   ~ 0
-MUX_COL_SEL1
-Text Label 6800 2150 2    50   ~ 0
-MUX_COL_SEL2
-Wire Wire Line
-	6800 2150 6050 2150
-Text Label 6800 1950 2    50   ~ 0
-MTDO
-Wire Wire Line
-	6800 1950 6050 1950
-Text Label 4300 2450 0    50   ~ 0
-KEYPAD_COL3
-Text Label 6800 1050 2    50   ~ 0
-GPIO0
-Wire Wire Line
-	6050 1050 6800 1050
-Text Label 4300 2650 0    50   ~ 0
-LCD_SCLK
-Text Label 4300 2750 0    50   ~ 0
-LCD_CS
-Text Label 4300 2550 0    50   ~ 0
-KEYPAD_COL2
 Text Label 2450 2450 0    50   ~ 0
 DBG2
 Text Label 2450 2350 0    50   ~ 0
@@ -1255,14 +1052,6 @@ F 3 "~" H 2900 2350 50  0001 C CNN
 	1    2900 2350
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6050 3250 6800 3250
-Wire Wire Line
-	6050 3350 6800 3350
-Text Label 6800 3250 2    50   ~ 0
-DBG1
-Text Label 6800 3350 2    50   ~ 0
-DBG2
 $Comp
 L Device:R R?
 U 1 1 615DA710
@@ -1313,17 +1102,6 @@ F 1 "100k" H 1550 4900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1730 4900 50  0001 C CNN
 F 3 "~" H 1800 4900 50  0001 C CNN
 	1    1800 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_PMOS_DGS Q4
-U 1 1 61B8D24F
-P 2400 4550
-F 0 "Q4" H 2200 4750 50  0000 L CNN
-F 1 "Q_PMOS_DGS" H 1850 4650 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 2600 4650 50  0001 C CNN
-F 3 "~" H 2400 4550 50  0001 C CNN
-	1    2400 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1386,17 +1164,6 @@ $EndComp
 Wire Wire Line
 	2550 4950 2350 4950
 $Comp
-L Device:D D5
-U 1 1 61CAFF58
-P 2050 4750
-F 0 "D5" V 2004 4830 50  0000 L CNN
-F 1 "D" V 2095 4830 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2050 4750 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2050 4750 50  0001 C CNN
-	1    2050 4750
-	-1   0    0    1   
-$EndComp
-$Comp
 L Switch:SW_DPST SW2
 U 1 1 615EE1A6
 P 2500 3450
@@ -1409,28 +1176,6 @@ F 3 "~" H 2500 3450 50  0001 C CNN
 $EndComp
 Text Label 7250 5750 0    50   ~ 0
 VCCD4
-$Comp
-L Connector:TestPoint TP1
-U 1 1 61D4495D
-P 9400 5650
-F 0 "TP1" V 9354 5838 50  0000 L CNN
-F 1 "TestPoint" V 9350 6000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 9600 5650 50  0001 C CNN
-F 3 "~" H 9600 5650 50  0001 C CNN
-	1    9400 5650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 61D44EF9
-P 9400 5750
-F 0 "TP2" V 9400 5950 50  0000 L CNN
-F 1 "TestPoint" V 9400 6100 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 9600 5750 50  0001 C CNN
-F 3 "~" H 9600 5750 50  0001 C CNN
-	1    9400 5750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2500 4750 2550 4750
 Wire Wire Line
@@ -1548,18 +1293,6 @@ Wire Wire Line
 	8150 6200 8250 6200
 Wire Wire Line
 	8250 6200 8250 6150
-Wire Wire Line
-	4850 2250 4300 2250
-Wire Wire Line
-	4850 2350 4300 2350
-Wire Wire Line
-	4300 2450 4850 2450
-Wire Wire Line
-	4850 2550 4300 2550
-Wire Wire Line
-	4300 2650 4850 2650
-Wire Wire Line
-	4850 2750 4300 2750
 $Comp
 L Connector:Conn_01x07_Female J8
 U 1 1 6191D287
@@ -1632,7 +1365,6 @@ Wire Wire Line
 	9750 950  9750 850 
 Wire Wire Line
 	9750 850  9200 850 
-Connection ~ 9200 850 
 Wire Wire Line
 	9750 950  9800 950 
 Connection ~ 9800 950 
@@ -1653,7 +1385,6 @@ Wire Wire Line
 Connection ~ 10300 1050
 Wire Wire Line
 	10300 1050 9800 1050
-Connection ~ 9200 950 
 Wire Wire Line
 	10800 1350 10300 1350
 Connection ~ 9200 1350
@@ -1677,7 +1408,6 @@ Wire Wire Line
 Connection ~ 10300 1150
 Wire Wire Line
 	10300 1150 9800 1150
-Connection ~ 9200 1050
 Wire Wire Line
 	10800 1250 10300 1250
 Wire Wire Line
@@ -1690,8 +1420,7 @@ Wire Wire Line
 Connection ~ 10300 1250
 Wire Wire Line
 	10300 1250 9800 1250
-Connection ~ 9200 1150
-Text Label 8600 1250 0    50   ~ 0
+Text Label 8600 850  0    50   ~ 0
 LED_OUT
 $Comp
 L power:GND #PWR039
@@ -1704,24 +1433,24 @@ F 3 "" H 8700 1350 50  0001 C CNN
 	1    8700 1350
 	1    0    0    -1  
 $EndComp
-Text Label 8600 950  0    50   ~ 0
-MUX_COL_SEL2
 Text Label 8600 1050 0    50   ~ 0
+MUX_COL_SEL2
+Text Label 8600 1150 0    50   ~ 0
 MUX_COL_SEL0
-Text Label 8600 850  0    50   ~ 0
+Text Label 8600 950  0    50   ~ 0
 MUX_COL_SEL1
-Wire Wire Line
-	8600 850  9200 850 
 Wire Wire Line
 	8600 950  9200 950 
 Wire Wire Line
 	8600 1050 9200 1050
-Text Label 8600 1150 0    50   ~ 0
-BOAT_INPUT
 Wire Wire Line
 	8600 1150 9200 1150
+Text Label 8600 1250 0    50   ~ 0
+BOAT_INPUT
 Wire Wire Line
 	8600 1250 9200 1250
+Wire Wire Line
+	8600 850  9200 850 
 $Comp
 L Connector:Conn_01x06_Female J13
 U 1 1 61C11330
@@ -2335,21 +2064,6 @@ F 3 "" H 7250 950 50  0001 C CNN
 	1    7250 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L RF_Module:ESP32-WROOM-32 U?
-U 1 1 6147878D
-P 5450 2250
-AR Path="/613B739E/6147878D" Ref="U?"  Part="1" 
-AR Path="/6147878D" Ref="U5"  Part="1" 
-F 0 "U5" H 5300 2700 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 5350 2600 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5450 750 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5150 2300 50  0001 C CNN
-	1    5450 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 1050 4850 1050
 Wire Wire Line
 	7850 3500 8250 3500
 Wire Wire Line
@@ -2494,8 +2208,6 @@ Wire Wire Line
 Wire Wire Line
 	9200 3750 8700 3750
 Connection ~ 9200 3750
-NoConn ~ 4850 1250
-NoConn ~ 4850 1350
 Wire Wire Line
 	1350 2300 1450 2300
 Wire Wire Line
@@ -2565,6 +2277,28 @@ Connection ~ 3700 2450
 Wire Wire Line
 	3950 2450 3700 2450
 $Comp
+L Device:R R13
+U 1 1 619949DC
+P 3700 3500
+F 0 "R13" H 3770 3546 50  0000 L CNN
+F 1 "470" H 3770 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3630 3500 50  0001 C CNN
+F 3 "~" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 616DDA5F
+P 5700 4700
+F 0 "C12" V 5448 4700 50  0000 C CNN
+F 1 "10uF" V 5539 4700 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5738 4550 50  0001 C CNN
+F 3 "~" H 5700 4700 50  0001 C CNN
+	1    5700 4700
+	0    1    1    0   
+$EndComp
+$Comp
 L Device:C C7
 U 1 1 616B2876
 P 3950 2300
@@ -2576,14 +2310,69 @@ F 3 "~" H 3950 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
-U 1 1 619949DC
-P 3700 3500
-F 0 "R13" H 3770 3546 50  0000 L CNN
-F 1 "470" H 3770 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3630 3500 50  0001 C CNN
-F 3 "~" H 3700 3500 50  0001 C CNN
-	1    3700 3500
+L Device:C C3
+U 1 1 6227BFE5
+P 5750 6200
+F 0 "C3" H 5865 6246 50  0000 L CNN
+F 1 "4.7uF" H 5865 6155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5788 6050 50  0001 C CNN
+F 3 "~" H 5750 6200 50  0001 C CNN
+	1    5750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q4
+U 1 1 61B8D24F
+P 2400 4550
+F 0 "Q4" H 2200 4750 50  0000 L CNN
+F 1 "Q_PMOS_DGS" H 1850 4650 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 2600 4650 50  0001 C CNN
+F 3 "~" H 2400 4550 50  0001 C CNN
+	1    2400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 61CAFF58
+P 2050 4750
+F 0 "D5" V 2004 4830 50  0000 L CNN
+F 1 "D" V 2095 4830 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2050 4750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2050 4750 50  0001 C CNN
+	1    2050 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 616C0DF1
+P 2350 7150
+F 0 "D2" H 2150 7100 50  0000 L CNN
+F 1 "D" H 2450 7100 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2350 7150 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2350 7150 50  0001 C CNN
+	1    2350 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6167094D
+P 1300 4550
+F 0 "C2" H 1415 4596 50  0000 L CNN
+F 1 "1uF" H 1415 4505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 1338 4400 50  0001 C CNN
+F 3 "~" H 1300 4550 50  0001 C CNN
+	1    1300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61670E32
+P 750 4550
+F 0 "C1" H 865 4596 50  0000 L CNN
+F 1 "4.7uF" H 865 4505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 788 4400 50  0001 C CNN
+F 3 "~" H 750 4550 50  0001 C CNN
+	1    750  4550
 	1    0    0    -1  
 $EndComp
 Text Label 2200 4750 0    50   ~ 0
@@ -2603,4 +2392,215 @@ F 3 "~" H 3050 3350 50  0001 C CNN
 	1    3050 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 6239E5F9
+P 2300 3350
+F 0 "#PWR010" H 2300 3100 50  0001 C CNN
+F 1 "GND" H 2305 3177 50  0000 C CNN
+F 2 "" H 2300 3350 50  0001 C CNN
+F 3 "" H 2300 3350 50  0001 C CNN
+	1    2300 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR09
+U 1 1 622D2577
+P 2300 3550
+F 0 "#PWR09" H 2300 3400 50  0001 C CNN
+F 1 "+BATT" H 2300 3700 50  0000 C CNN
+F 2 "" H 2300 3550 50  0001 C CNN
+F 3 "" H 2300 3550 50  0001 C CNN
+	1    2300 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61D4495D
+P 9400 5650
+F 0 "TP1" V 9354 5838 50  0000 L CNN
+F 1 "TestPoint" V 9350 6000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 9600 5650 50  0001 C CNN
+F 3 "~" H 9600 5650 50  0001 C CNN
+	1    9400 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61D44EF9
+P 9400 5750
+F 0 "TP2" V 9400 5950 50  0000 L CNN
+F 1 "TestPoint" V 9400 6100 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 9600 5750 50  0001 C CNN
+F 3 "~" H 9600 5750 50  0001 C CNN
+	1    9400 5750
+	0    1    1    0   
+$EndComp
+Text Label 3900 -3400 0    50   ~ 0
+RESET
+$Comp
+L power:+3.3V #PWR017
+U 1 1 61631CE3
+P 5050 -3600
+F 0 "#PWR017" H 5050 -3750 50  0001 C CNN
+F 1 "+3.3V" H 5065 -3427 50  0000 C CNN
+F 2 "" H 5050 -3600 50  0001 C CNN
+F 3 "" H 5050 -3600 50  0001 C CNN
+	1    5050 -3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 61478793
+P 5050 -800
+F 0 "#PWR018" H 5050 -1050 50  0001 C CNN
+F 1 "GND" H 5055 -973 50  0000 C CNN
+F 2 "" H 5050 -800 50  0001 C CNN
+F 3 "" H 5050 -800 50  0001 C CNN
+	1    5050 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 6147878D
+P 5050 -2200
+AR Path="/613B739E/6147878D" Ref="U?"  Part="1" 
+AR Path="/6147878D" Ref="U5"  Part="1" 
+F 0 "U5" H 4900 -1750 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 4950 -1850 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5050 -3700 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4750 -2150 50  0001 C CNN
+	1    5050 -2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 -3400 4450 -3400
+NoConn ~ 4450 -3200
+NoConn ~ 4450 -3100
+Text Label 3900 -2100 0    50   ~ 0
+MOTOR
+Text Notes 6050 -850 0    50   ~ 0
+DAC1 is IO25,\nDAC2 is IO26
+Wire Wire Line
+	5650 -3300 6400 -3300
+Wire Wire Line
+	5650 -3100 6400 -3100
+Text Label 6400 -3100 2    50   ~ 0
+RXD0
+Text Label 6400 -3300 2    50   ~ 0
+TXD0
+Wire Wire Line
+	6400 -2800 5650 -2800
+Text Label 6400 -2800 2    50   ~ 0
+MTDI
+Wire Wire Line
+	6400 -2700 5650 -2700
+Text Label 6400 -2700 2    50   ~ 0
+MTCK
+Wire Wire Line
+	6400 -2600 5650 -2600
+Text Label 6400 -2600 2    50   ~ 0
+MTMS
+Text Label 6400 -2500 2    50   ~ 0
+MTDO
+Wire Wire Line
+	6400 -2500 5650 -2500
+Text Label 6400 -3400 2    50   ~ 0
+GPIO0
+Wire Wire Line
+	5650 -3400 6400 -3400
+Text Label 3900 -2200 0    50   ~ 0
+LCD_MOSI
+Text Label 3900 -1800 0    50   ~ 0
+LCD_SCLK
+Text Label 3900 -1700 0    50   ~ 0
+LCD_CS
+Text Label 6400 -1500 2    50   ~ 0
+KEYPAD_COL2
+Wire Wire Line
+	4450 -2200 3900 -2200
+Wire Wire Line
+	3900 -1800 4450 -1800
+Wire Wire Line
+	4450 -1700 3900 -1700
+Wire Wire Line
+	5650 -1900 6400 -1900
+Wire Wire Line
+	5650 -1800 6400 -1800
+Text Label 6400 -1900 2    50   ~ 0
+DBG1
+Text Label 6400 -1800 2    50   ~ 0
+DBG2
+Text Label 6400 -1200 2    50   ~ 0
+KEYPAD_ROW3
+Wire Wire Line
+	5650 -1200 6400 -1200
+Text Label 6400 -1100 2    50   ~ 0
+KEYPAD_ROW2
+Wire Wire Line
+	5650 -1100 6400 -1100
+Text Label 6400 -1400 2    50   ~ 0
+KEYPAD_ROW1
+Wire Wire Line
+	5650 -1400 6400 -1400
+Text Label 6400 -1300 2    50   ~ 0
+KEYPAD_ROW0
+Wire Wire Line
+	5650 -1300 6400 -1300
+Text Label 6400 -1700 2    50   ~ 0
+SPEAKER
+Wire Wire Line
+	5650 -1700 6400 -1700
+Text Label 6400 -3200 2    50   ~ 0
+LED_OUT
+Wire Wire Line
+	5650 -3200 6400 -3200
+Wire Wire Line
+	4450 -2000 3900 -2000
+Text Label 6400 -1600 2    50   ~ 0
+KEYPAD_COL3
+Text Label 3900 -2000 0    50   ~ 0
+KEYPAD_COL1
+Text Label 3900 -1900 0    50   ~ 0
+KEYPAD_COL0
+Wire Wire Line
+	5650 -1600 6400 -1600
+Wire Wire Line
+	5650 -1500 6400 -1500
+Wire Wire Line
+	4450 -1900 3900 -1900
+Wire Wire Line
+	4450 -2100 3900 -2100
+Text Label 6400 -2000 2    50   ~ 0
+MUX_ROW_SEL2
+Wire Wire Line
+	5650 -2000 6400 -2000
+Text Label 6400 -2400 2    50   ~ 0
+MUX_COL_SEL2
+Text Label 6400 -2100 2    50   ~ 0
+MUX_ROW_SEL1
+Wire Wire Line
+	5650 -2100 6400 -2100
+Text Label 6400 -2900 2    50   ~ 0
+BOAT_INPUT
+Wire Wire Line
+	5650 -2900 6400 -2900
+Wire Wire Line
+	5650 -2300 6400 -2300
+Text Label 6400 -2300 2    50   ~ 0
+MUX_COL_SEL0
+Text Label 6400 -3000 2    50   ~ 0
+MUX_COL_SEL1
+Wire Wire Line
+	5650 -2200 6400 -2200
+Text Label 6400 -2200 2    50   ~ 0
+MUX_ROW_SEL0
+Wire Wire Line
+	5650 -2400 6400 -2400
+Wire Wire Line
+	6400 -3000 5650 -3000
+Connection ~ 9200 850 
+Connection ~ 9200 950 
+Connection ~ 9200 1050
+Connection ~ 9200 1150
 $EndSCHEMATC
