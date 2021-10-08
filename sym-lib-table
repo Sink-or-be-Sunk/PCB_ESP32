@@ -1,2 +1,4 @@
 (sym_lib_table
+  (lib (name grid)(type Legacy)(uri ${KIPRJMOD}/grid.lib)(options "")(descr ""))
+  (lib (name sink_or_be_sunk-rescue)(type Legacy)(uri ${KIPRJMOD}/sink_or_be_sunk-rescue.lib)(options "")(descr ""))
 )
