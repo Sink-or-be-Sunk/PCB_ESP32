@@ -1286,7 +1286,7 @@ U 1 1 6191D287
 P 9400 1050
 F 0 "J1" H 9050 1450 50  0000 L CNN
 F 1 "Grid_Conn_LED" H 9200 1450 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 9400 1050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical" H 9400 1050 50  0001 C CNN
 F 3 "~" H 9400 1050 50  0001 C CNN
 	1    9400 1050
 	1    0    0    -1  
@@ -1297,7 +1297,7 @@ U 1 1 61921F84
 P 10000 1050
 F 0 "J2" H 9800 1450 50  0000 L CNN
 F 1 "Grid_Conn" H 9800 1350 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 1050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10000 1050 50  0001 C CNN
 F 3 "~" H 10000 1050 50  0001 C CNN
 	1    10000 1050
 	1    0    0    -1  
@@ -1308,7 +1308,7 @@ U 1 1 619426C2
 P 10500 1050
 F 0 "J3" H 10300 1450 50  0000 L CNN
 F 1 "Grid_Conn" H 10300 1350 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10500 1050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10500 1050 50  0001 C CNN
 F 3 "~" H 10500 1050 50  0001 C CNN
 	1    10500 1050
 	1    0    0    -1  
@@ -1319,7 +1319,7 @@ U 1 1 6196DC3C
 P 11000 1050
 F 0 "J4" H 10800 1450 50  0000 L CNN
 F 1 "Grid_Conn" H 10800 1350 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11000 1050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 11000 1050 50  0001 C CNN
 F 3 "~" H 11000 1050 50  0001 C CNN
 	1    11000 1050
 	1    0    0    -1  
@@ -1418,7 +1418,7 @@ U 1 1 61C11330
 P 10000 1850
 F 0 "J6" H 9800 2250 50  0000 L CNN
 F 1 "Grid_Conn" H 9800 2150 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 1850 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10000 1850 50  0001 C CNN
 F 3 "~" H 10000 1850 50  0001 C CNN
 	1    10000 1850
 	1    0    0    -1  
@@ -1429,7 +1429,7 @@ U 1 1 61C11336
 P 10500 1850
 F 0 "J7" H 10300 2250 50  0000 L CNN
 F 1 "Grid_Conn" H 10300 2150 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10500 1850 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10500 1850 50  0001 C CNN
 F 3 "~" H 10500 1850 50  0001 C CNN
 	1    10500 1850
 	1    0    0    -1  
@@ -1440,7 +1440,7 @@ U 1 1 61C1133C
 P 11000 1850
 F 0 "J8" H 10800 2250 50  0000 L CNN
 F 1 "Grid_Conn" H 10800 2150 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11000 1850 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 11000 1850 50  0001 C CNN
 F 3 "~" H 11000 1850 50  0001 C CNN
 	1    11000 1850
 	1    0    0    -1  
@@ -1524,7 +1524,7 @@ U 1 1 61C5494A
 P 9400 1850
 F 0 "J5" H 9200 2250 50  0000 L CNN
 F 1 "Grid_Conn" H 9200 2150 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9400 1850 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 9400 1850 50  0001 C CNN
 F 3 "~" H 9400 1850 50  0001 C CNN
 	1    9400 1850
 	1    0    0    -1  
@@ -1558,7 +1558,7 @@ U 1 1 61CE24CF
 P 10000 2650
 F 0 "J10" H 9800 3050 50  0000 L CNN
 F 1 "Grid_Conn" H 9800 2950 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 2650 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10000 2650 50  0001 C CNN
 F 3 "~" H 10000 2650 50  0001 C CNN
 	1    10000 2650
 	1    0    0    -1  
@@ -1569,7 +1569,7 @@ U 1 1 61CE24D5
 P 10500 2650
 F 0 "J11" H 10300 3050 50  0000 L CNN
 F 1 "Grid_Conn" H 10300 2950 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10500 2650 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10500 2650 50  0001 C CNN
 F 3 "~" H 10500 2650 50  0001 C CNN
 	1    10500 2650
 	1    0    0    -1  
@@ -1580,7 +1580,7 @@ U 1 1 61CE24DB
 P 11000 2650
 F 0 "J12" H 10800 3050 50  0000 L CNN
 F 1 "Grid_Conn" H 10800 2950 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11000 2650 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 11000 2650 50  0001 C CNN
 F 3 "~" H 11000 2650 50  0001 C CNN
 	1    11000 2650
 	1    0    0    -1  
@@ -1664,7 +1664,7 @@ U 1 1 61CE250A
 P 9400 2650
 F 0 "J9" H 9200 3050 50  0000 L CNN
 F 1 "Grid_Conn" H 9200 2950 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9400 2650 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 9400 2650 50  0001 C CNN
 F 3 "~" H 9400 2650 50  0001 C CNN
 	1    9400 2650
 	1    0    0    -1  
@@ -1698,7 +1698,7 @@ U 1 1 61D008DF
 P 10000 3450
 F 0 "J14" H 9800 3850 50  0000 L CNN
 F 1 "Grid_Conn" H 9800 3750 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 3450 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10000 3450 50  0001 C CNN
 F 3 "~" H 10000 3450 50  0001 C CNN
 	1    10000 3450
 	1    0    0    -1  
@@ -1709,7 +1709,7 @@ U 1 1 61D008E5
 P 10500 3450
 F 0 "J15" H 10300 3850 50  0000 L CNN
 F 1 "Grid_Conn" H 10300 3750 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10500 3450 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10500 3450 50  0001 C CNN
 F 3 "~" H 10500 3450 50  0001 C CNN
 	1    10500 3450
 	1    0    0    -1  
@@ -1720,7 +1720,7 @@ U 1 1 61D008EB
 P 11000 3450
 F 0 "J16" H 10800 3850 50  0000 L CNN
 F 1 "Grid_Conn" H 10800 3750 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11000 3450 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 11000 3450 50  0001 C CNN
 F 3 "~" H 11000 3450 50  0001 C CNN
 	1    11000 3450
 	1    0    0    -1  
@@ -1796,7 +1796,7 @@ U 1 1 61D0091A
 P 9400 3450
 F 0 "J13" H 9200 3850 50  0000 L CNN
 F 1 "Grid_Conn" H 9200 3750 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9400 3450 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 9400 3450 50  0001 C CNN
 F 3 "~" H 9400 3450 50  0001 C CNN
 	1    9400 3450
 	1    0    0    -1  
@@ -2282,13 +2282,13 @@ F 3 "~" H 5750 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_DGS Q2
+L Device:Q_PMOS_GDS Q2
 U 1 1 61B8D24F
 P 2400 4550
 F 0 "Q2" H 2200 4750 50  0000 L CNN
 F 1 "Q_PMOS_DGS" H 1850 4650 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 2600 4650 50  0001 C CNN
-F 3 "~" H 2400 4550 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 2600 4650 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/6e63ma1bli/ONSM-S-A0003587829-1.pdf?t.download=true&u=5oefqw" H 2400 4550 50  0001 C CNN
 	1    2400 4550
 	1    0    0    -1  
 $EndComp
@@ -2299,7 +2299,7 @@ P 2050 4750
 F 0 "D1" V 2004 4830 50  0000 L CNN
 F 1 "D" V 2095 4830 50  0000 L CNN
 F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2050 4750 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2050 4750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds23001.pdf" H 2050 4750 50  0001 C CNN
 	1    2050 4750
 	-1   0    0    1   
 $EndComp
@@ -2585,4 +2585,8 @@ F 3 "" H 5400 4700 50  0001 C CNN
 	1    5400 4700
 	1    0    0    -1  
 $EndComp
+Text Notes 1900 5100 0    50   ~ 0
+1N5817\nSchottky 
+Text Notes 2600 4450 0    50   ~ 0
+FQU17P06
 $EndSCHEMATC
