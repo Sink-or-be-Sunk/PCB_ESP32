@@ -256,23 +256,23 @@ F 3 "" H 3700 2450 50  0001 C CNN
 	1    3700 2450
 	1    0    0    -1  
 $EndComp
-Text Label 2800 800  2    50   ~ 0
+Text Label 2900 1000 2    50   ~ 0
 MTDO
-Text Label 2800 900  2    50   ~ 0
+Text Label 2900 1100 2    50   ~ 0
 MTCK
-Text Label 2800 1000 2    50   ~ 0
+Text Label 2900 1200 2    50   ~ 0
 MTDI
-Text Label 2800 1100 2    50   ~ 0
+Text Label 2900 1300 2    50   ~ 0
 MTMS
 $Comp
 L Connector:Conn_01x04_Male J20
 U 1 1 615AFA5D
-P 1950 1000
-F 0 "J20" H 2050 650 50  0000 R CNN
-F 1 "JTAG_Conn" H 2700 650 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1950 1000 50  0001 C CNN
-F 3 "~" H 1950 1000 50  0001 C CNN
-	1    1950 1000
+P 2050 1200
+F 0 "J20" H 2150 850 50  0000 R CNN
+F 1 "JTAG_Conn" H 2800 850 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 1200 50  0001 C CNN
+F 3 "~" H 2050 1200 50  0001 C CNN
+	1    2050 1200
 	1    0    0    1   
 $EndComp
 Text Label 1450 7150 0    50   ~ 0
@@ -948,19 +948,19 @@ F 3 "" H 4750 4350 50  0001 C CNN
 	1    4750 4350
 	1    0    0    -1  
 $EndComp
-Text Label 2450 2450 0    50   ~ 0
+Text Label 2350 3550 0    50   ~ 0
 DBG2
-Text Label 2450 2350 0    50   ~ 0
+Text Label 2350 3450 0    50   ~ 0
 DBG1
 $Comp
 L Connector:Conn_01x02_Male J21
 U 1 1 61ACB27A
-P 2900 2350
-F 0 "J21" H 3300 2600 50  0000 R CNN
-F 1 "Debug_Conn" H 3300 2500 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 2350 50  0001 C CNN
-F 3 "~" H 2900 2350 50  0001 C CNN
-	1    2900 2350
+P 2800 3450
+F 0 "J21" H 3200 3700 50  0000 R CNN
+F 1 "Debug_Conn" H 3200 3600 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2800 3450 50  0001 C CNN
+F 3 "~" H 2800 3450 50  0001 C CNN
+	1    2800 3450
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1015,29 +1015,12 @@ F 3 "" H 2400 5050 50  0001 C CNN
 	1    2400 5050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_DPST SW1
-U 1 1 615EE1A6
-P 2500 3450
-F 0 "SW1" H 2500 3750 50  0000 C CNN
-F 1 "SW_DPST" H 2500 3650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2500 3450 50  0001 C CNN
-F 3 "~" H 2500 3450 50  0001 C CNN
-	1    2500 3450
-	1    0    0    -1  
-$EndComp
 Text Label 7250 5750 0    50   ~ 0
 VCCD4
 Wire Wire Line
-	2700 3350 2850 3350
+	2600 3450 2350 3450
 Wire Wire Line
-	2850 3450 2850 3550
-Wire Wire Line
-	2850 3550 2700 3550
-Wire Wire Line
-	2700 2350 2450 2350
-Wire Wire Line
-	2700 2450 2450 2450
+	2600 3550 2350 3550
 Wire Notes Line
 	550  1850 2250 1850
 Wire Notes Line
@@ -1090,8 +1073,8 @@ F 3 "" H 3700 3650 50  0001 C CNN
 	1    3700 3650
 	1    0    0    -1  
 $EndComp
-Text Notes -3350 850  0    50   ~ 0
-TODO: \n- heat calcs for LDO, MOSFET in Power and filtering section, speaker\n- measure bulk capacitor for diameter(footprints)
+Text Notes -2450 1000 0    50   ~ 0
+TODO: \n- heat calcs for Regulator, MOSFET in Power and filtering section, speaker\n- measure bulk capacitor for diameter(footprints)
 Wire Wire Line
 	5050 4550 5050 5150
 Wire Wire Line
@@ -1341,63 +1324,63 @@ F 3 "" H 8700 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 800  2550 800 
+	2900 1000 2650 1000
 Wire Wire Line
-	2150 800  2250 800 
+	2250 1000 2350 1000
 Wire Wire Line
-	2150 900  2250 900 
+	2250 1100 2350 1100
 Wire Wire Line
-	2150 1000 2250 1000
+	2250 1200 2350 1200
 Wire Wire Line
-	2150 1100 2250 1100
+	2250 1300 2350 1300
 Wire Wire Line
-	2550 900  2800 900 
+	2650 1100 2900 1100
 Wire Wire Line
-	2550 1000 2800 1000
+	2650 1200 2900 1200
 Wire Wire Line
-	2550 1100 2800 1100
+	2650 1300 2900 1300
 $Comp
 L Device:R R17
 U 1 1 6219762B
-P 2400 800
-F 0 "R17" V 2350 600 50  0000 C CNN
-F 1 "20" V 2400 800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 800 50  0001 C CNN
-F 3 "~" H 2400 800 50  0001 C CNN
-	1    2400 800 
+P 2500 1000
+F 0 "R17" V 2450 800 50  0000 C CNN
+F 1 "20" V 2500 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 1000 50  0001 C CNN
+F 3 "~" H 2500 1000 50  0001 C CNN
+	1    2500 1000
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R18
 U 1 1 62197CC2
-P 2400 900
-F 0 "R18" V 2350 700 50  0000 C CNN
-F 1 "20" V 2400 900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 900 50  0001 C CNN
-F 3 "~" H 2400 900 50  0001 C CNN
-	1    2400 900 
+P 2500 1100
+F 0 "R18" V 2450 900 50  0000 C CNN
+F 1 "20" V 2500 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 1100 50  0001 C CNN
+F 3 "~" H 2500 1100 50  0001 C CNN
+	1    2500 1100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R19
 U 1 1 62197F9F
-P 2400 1000
-F 0 "R19" V 2350 800 50  0000 C CNN
-F 1 "20" V 2400 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 1000 50  0001 C CNN
-F 3 "~" H 2400 1000 50  0001 C CNN
-	1    2400 1000
+P 2500 1200
+F 0 "R19" V 2450 1000 50  0000 C CNN
+F 1 "20" V 2500 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 1200 50  0001 C CNN
+F 3 "~" H 2500 1200 50  0001 C CNN
+	1    2500 1200
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R20
 U 1 1 621982E9
-P 2400 1100
-F 0 "R20" V 2350 900 50  0000 C CNN
-F 1 "20" V 2400 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 1100 50  0001 C CNN
-F 3 "~" H 2400 1100 50  0001 C CNN
-	1    2400 1100
+P 2500 1300
+F 0 "R20" V 2450 1100 50  0000 C CNN
+F 1 "20" V 2500 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 1300 50  0001 C CNN
+F 3 "~" H 2500 1300 50  0001 C CNN
+	1    2500 1300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1681,37 +1664,26 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2350 7150 50  0001 
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J22
-U 1 1 623CFEBF
-P 3050 3350
-F 0 "J22" H 2950 3150 50  0000 L CNN
-F 1 "Battery_Conn" H 2600 3050 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3050 3350 50  0001 C CNN
-F 3 "~" H 3050 3350 50  0001 C CNN
-	1    3050 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR010
 U 1 1 6239E5F9
-P 2300 3350
-F 0 "#PWR010" H 2300 3100 50  0001 C CNN
-F 1 "GND" H 2305 3177 50  0000 C CNN
-F 2 "" H 2300 3350 50  0001 C CNN
-F 3 "" H 2300 3350 50  0001 C CNN
-	1    2300 3350
-	-1   0    0    1   
+P 850 1500
+F 0 "#PWR010" H 850 1250 50  0001 C CNN
+F 1 "GND" H 855 1327 50  0000 C CNN
+F 2 "" H 850 1500 50  0001 C CNN
+F 3 "" H 850 1500 50  0001 C CNN
+	1    850  1500
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+BATT #PWR011
 U 1 1 622D2577
-P 2300 3550
-F 0 "#PWR011" H 2300 3400 50  0001 C CNN
-F 1 "+BATT" H 2300 3700 50  0000 C CNN
-F 2 "" H 2300 3550 50  0001 C CNN
-F 3 "" H 2300 3550 50  0001 C CNN
-	1    2300 3550
-	-1   0    0    1   
+P 850 800
+F 0 "#PWR011" H 850 650 50  0001 C CNN
+F 1 "+BATT" H 850 950 50  0000 C CNN
+F 2 "" H 850 800 50  0001 C CNN
+F 3 "" H 850 800 50  0001 C CNN
+	1    850  800 
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP1
@@ -2226,8 +2198,8 @@ F 3 "" H 2900 5050 50  0001 C CNN
 	1    2900 5050
 	1    0    0    -1  
 $EndComp
-Text Notes -2900 3900 0    50   ~ 0
-Note sure if these caps are needed.  There is no\nrecommended circuit for this device so I’m assuming you\ndon’t need anything?
+Text Notes -1850 4750 0    50   ~ 0
+Not sure if these caps are needed.  There is no\nrecommended circuit for this device so I’m assuming you\ndon’t need anything?
 $Comp
 L power:+BATT #PWR014
 U 1 1 61C44AB1
@@ -2309,4 +2281,36 @@ F 3 "~" H 1650 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1750 4750
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 615EE1A6
+P 1050 1150
+F 0 "SW1" H 1050 1400 50  0000 C CNN
+F 1 "SW_DPST" H 1150 1500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1050 1150 50  0001 C CNN
+F 3 "~" H 1050 1150 50  0001 C CNN
+	1    1050 1150
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J22
+U 1 1 623CFEBF
+P 1600 1250
+F 0 "J22" H 1500 1050 50  0000 L CNN
+F 1 "Battery_Conn" H 1150 950 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 1600 1250 50  0001 C CNN
+F 3 "~" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1050 1250 1050
+Wire Wire Line
+	1400 1150 1400 1050
+Wire Wire Line
+	1250 1250 1400 1250
+Wire Wire Line
+	850  800  850  1050
+Wire Wire Line
+	850  1250 850  1500
 $EndSCHEMATC
