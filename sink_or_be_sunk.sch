@@ -1625,7 +1625,7 @@ P 2350 7150
 F 0 "D2" H 2150 7100 50  0000 L CNN
 F 1 "D" H 2450 7100 50  0000 L CNN
 F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2350 7150 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 2350 7150 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/1n5817-d.pdf" H 2350 7150 50  0001 C CNN
 	1    2350 7150
 	-1   0    0    1   
 $EndComp
@@ -2165,7 +2165,7 @@ P 1150 4700
 F 0 "D1" V 1104 4780 50  0000 L CNN
 F 1 "D" V 1195 4780 50  0000 L CNN
 F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1150 4700 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 1150 4700 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/1n5817-d.pdf" H 1150 4700 50  0001 C CNN
 	1    1150 4700
 	-1   0    0    1   
 $EndComp
