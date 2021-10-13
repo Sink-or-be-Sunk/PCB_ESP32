@@ -4,4 +4,8 @@ $CMP MCP608
 F https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/11177f.pdf
 $ENDCMP
 #
+$CMP SwitchingRegulator
+F https://www.mouser.com/datasheet/2/632/dele_s_a0000496181_1-2289578.pdf
+$ENDCMP
+#
 #End Doc Library
