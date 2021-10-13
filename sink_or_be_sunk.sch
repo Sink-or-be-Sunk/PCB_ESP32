@@ -2174,13 +2174,13 @@ Vin
 Wire Wire Line
 	1600 4700 1300 4700
 $Comp
-L Device:Q_PMOS_DGS Q2
+L Device:Q_PMOS_GDS Q2
 U 1 1 61B8D24F
 P 1500 4500
 F 0 "Q2" H 1300 4700 50  0000 L CNN
-F 1 "Q_PMOS_DGS" H 950 4600 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1700 4600 50  0001 C CNN
-F 3 "~" H 1500 4500 50  0001 C CNN
+F 1 "Q_PMOS_GDS" H 950 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 1700 4600 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/6e63ma1bli/ONSM-S-A0003587829-1.pdf?t.download=true&u=5oefqw~" H 1500 4500 50  0001 C CNN
 	1    1500 4500
 	1    0    0    -1  
 $EndComp
