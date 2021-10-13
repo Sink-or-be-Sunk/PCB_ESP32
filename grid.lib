@@ -118,4 +118,21 @@ X C 9 300 -350 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# SwitchingRegulator
+#
+DEF SwitchingRegulator U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "SwitchingRegulator" 0 0 50 H V C CNN
+F2 "PCB_ESP32:SwitchingRegulator" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 350 250 -100 0 1 0 N
+X Vin 1 -450 250 100 R 50 50 1 1 W
+X On/Off 2 -450 100 100 R 50 50 1 1 I
+X GND 3 350 -50 100 L 50 50 1 1 W
+X Trim 4 350 100 100 L 50 50 1 1 W
+X Vout 5 350 250 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
 #End Library
