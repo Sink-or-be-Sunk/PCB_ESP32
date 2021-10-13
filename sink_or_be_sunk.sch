@@ -1039,8 +1039,6 @@ F 3 "" H 3700 3650 50  0001 C CNN
 	1    3700 3650
 	1    0    0    -1  
 $EndComp
-Text Notes -2450 1000 0    50   ~ 0
-TODO: \n- heat calcs for Regulator, MOSFET in Power and filtering section, speaker\n- measure bulk capacitor for diameter(footprints)
 Wire Wire Line
 	5050 4550 5050 5150
 Wire Wire Line
