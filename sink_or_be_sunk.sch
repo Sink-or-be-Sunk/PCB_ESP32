@@ -878,8 +878,6 @@ Text Notes 3700 5550 0    50   ~ 0
 LIPO Charger
 Text Notes 650  5550 0    50   ~ 0
 Ship Select
-Text Notes 2650 4150 0    50   ~ 0
-Power and Filtering
 $Comp
 L power:VBUS #PWR015
 U 1 1 615AEF27
@@ -1728,81 +1726,81 @@ MUX_R1
 $Comp
 L power:+BATT #PWR014
 U 1 1 61C44AB1
-P 1600 4300
-F 0 "#PWR014" H 1600 4150 50  0001 C CNN
-F 1 "+BATT" H 1615 4473 50  0000 C CNN
-F 2 "" H 1600 4300 50  0001 C CNN
-F 3 "" H 1600 4300 50  0001 C CNN
-	1    1600 4300
+P 1550 4300
+F 0 "#PWR014" H 1550 4150 50  0001 C CNN
+F 1 "+BATT" H 1565 4473 50  0000 C CNN
+F 2 "" H 1550 4300 50  0001 C CNN
+F 3 "" H 1550 4300 50  0001 C CNN
+	1    1550 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R16
 U 1 1 61B8EE7E
-P 900 4850
-F 0 "R16" H 650 4950 50  0000 L CNN
-F 1 "100k" H 650 4850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 830 4850 50  0001 C CNN
-F 3 "~" H 900 4850 50  0001 C CNN
-	1    900  4850
+P 850 4850
+F 0 "R16" H 600 4950 50  0000 L CNN
+F 1 "100k" H 600 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 780 4850 50  0001 C CNN
+F 3 "~" H 850 4850 50  0001 C CNN
+	1    850  4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VBUS #PWR06
 U 1 1 616721DB
-P 900 4300
-F 0 "#PWR06" H 900 4150 50  0001 C CNN
-F 1 "VBUS" H 915 4473 50  0000 C CNN
-F 2 "" H 900 4300 50  0001 C CNN
-F 3 "" H 900 4300 50  0001 C CNN
-	1    900  4300
+P 850 4300
+F 0 "#PWR06" H 850 4150 50  0001 C CNN
+F 1 "VBUS" H 865 4473 50  0000 C CNN
+F 2 "" H 850 4300 50  0001 C CNN
+F 3 "" H 850 4300 50  0001 C CNN
+	1    850  4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  4300 900  4500
+	850  4300 850  4500
 Wire Wire Line
-	900  4700 1000 4700
-Connection ~ 900  4700
+	850  4700 950  4700
+Connection ~ 850  4700
 $Comp
 L power:GND #PWR07
 U 1 1 61C53673
-P 900 5000
-F 0 "#PWR07" H 900 4750 50  0001 C CNN
-F 1 "GND" H 905 4827 50  0000 C CNN
-F 2 "" H 900 5000 50  0001 C CNN
-F 3 "" H 900 5000 50  0001 C CNN
-	1    900  5000
+P 850 5000
+F 0 "#PWR07" H 850 4750 50  0001 C CNN
+F 1 "GND" H 855 4827 50  0000 C CNN
+F 2 "" H 850 5000 50  0001 C CNN
+F 3 "" H 850 5000 50  0001 C CNN
+	1    850  5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 4500 900  4500
-Connection ~ 900  4500
+	1250 4500 850  4500
+Connection ~ 850  4500
 Wire Wire Line
-	900  4500 900  4700
+	850  4500 850  4700
 $Comp
 L Device:D D1
 U 1 1 61CAFF58
-P 1150 4700
-F 0 "D1" V 1104 4780 50  0000 L CNN
-F 1 "D" V 1195 4780 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1150 4700 50  0001 C CNN
-F 3 "https://www.onsemi.com/pdf/datasheet/1n5817-d.pdf" H 1150 4700 50  0001 C CNN
-	1    1150 4700
+P 1100 4700
+F 0 "D1" V 1054 4780 50  0000 L CNN
+F 1 "D" V 1145 4780 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1100 4700 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/1n5817-d.pdf" H 1100 4700 50  0001 C CNN
+	1    1100 4700
 	-1   0    0    1   
 $EndComp
-Text Label 1300 4700 0    50   ~ 0
+Text Label 1250 4700 0    50   ~ 0
 Vin
 Wire Wire Line
-	1600 4700 1300 4700
+	1550 4700 1250 4700
 $Comp
 L Device:Q_PMOS_GDS Q2
 U 1 1 61B8D24F
-P 1500 4500
-F 0 "Q2" H 1300 4700 50  0000 L CNN
-F 1 "Q_PMOS_GDS" H 950 4600 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 1700 4600 50  0001 C CNN
-F 3 "https://rocelec.widen.net/view/pdf/6e63ma1bli/ONSM-S-A0003587829-1.pdf?t.download=true&u=5oefqw~" H 1500 4500 50  0001 C CNN
-	1    1500 4500
+P 1450 4500
+F 0 "Q2" H 1250 4700 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 900 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 1650 4600 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/6e63ma1bli/ONSM-S-A0003587829-1.pdf?t.download=true&u=5oefqw~" H 1450 4500 50  0001 C CNN
+	1    1450 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1841,77 +1839,10 @@ Wire Notes Line
 	550  1850 3100 1850
 Wire Notes Line
 	550  2800 3100 2800
-$Comp
-L Device:R_POT RV2
-U 1 1 616E74CB
-P 2900 4850
-F 0 "RV2" H 3300 4900 50  0000 R CNN
-F 1 "R_Trim (10k)" H 3450 5000 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 2900 4850 50  0001 C CNN
-F 3 "~" H 2900 4850 50  0001 C CNN
-	1    2900 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 617355CE
-P 1950 4700
-F 0 "#PWR02" H 1950 4450 50  0001 C CNN
-F 1 "GND" H 1955 4527 50  0000 C CNN
-F 2 "" H 1950 4700 50  0001 C CNN
-F 3 "" H 1950 4700 50  0001 C CNN
-	1    1950 4700
-	1    0    0    -1  
-$EndComp
 Text Notes -1400 4750 0    50   ~ 0
 “If the negative On/Off function is not used, \ntie the pin to GND. (module will be On)”\n(datasheet pg.8 above Figure 26)
-Wire Wire Line
-	2750 4850 2750 5000
-$Comp
-L power:GND #PWR03
-U 1 1 6173594A
-P 2800 5000
-F 0 "#PWR03" H 2800 4750 50  0001 C CNN
-F 1 "GND" H 2805 4827 50  0000 C CNN
-F 2 "" H 2800 5000 50  0001 C CNN
-F 3 "" H 2800 5000 50  0001 C CNN
-	1    2800 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 4700 2900 4700
-Wire Wire Line
-	2900 5000 2800 5000
-Connection ~ 2800 5000
-Wire Wire Line
-	2800 5000 2750 5000
-Wire Wire Line
-	3050 4850 3050 5000
-Wire Wire Line
-	3050 5000 2900 5000
-Connection ~ 2900 5000
-Text Notes 2100 5100 0    50   ~ 0
+Text Notes 2000 5100 0    50   ~ 0
 R_trim = 3160\nfor 3.3V output
-$Comp
-L power:+3.3V #PWR017
-U 1 1 61719CD4
-P 2900 4550
-F 0 "#PWR017" H 2900 4400 50  0001 C CNN
-F 1 "+3.3V" H 2915 4723 50  0000 C CNN
-F 2 "" H 2900 4550 50  0001 C CNN
-F 3 "" H 2900 4550 50  0001 C CNN
-	1    2900 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 4550 2900 4550
-Wire Wire Line
-	1750 4700 1600 4700
-Connection ~ 1600 4700
-Wire Wire Line
-	1950 4550 1750 4550
-Wire Wire Line
-	1750 4550 1750 4700
 $Comp
 L Connector:USB_B_Micro J17
 U 1 1 619C22A6
@@ -1955,17 +1886,6 @@ F 1 "SN74HC151N" H 2000 6684 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6200 50  0001 C CNN
 F 3 "" H 2050 6200 50  0001 C CNN
 	1    2000 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L esp_board:SwitchingRegulator U2
-U 1 1 61A086E5
-P 2400 4800
-F 0 "U2" H 2350 5315 50  0000 C CNN
-F 1 "SwitchingRegulator" H 2350 5224 50  0000 C CNN
-F 2 "PCB_ESP32:SwitchingRegulator" H 2400 4800 50  0001 C CNN
-F 3 "" H 2400 4800 50  0001 C CNN
-	1    2400 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2306,4 +2226,88 @@ Wire Wire Line
 Connection ~ 10350 3700
 Wire Wire Line
 	10350 3700 9850 3700
+Wire Wire Line
+	2900 4600 3050 4600
+$Comp
+L power:+3.3V #PWR017
+U 1 1 61719CD4
+P 3050 4600
+F 0 "#PWR017" H 3050 4450 50  0001 C CNN
+F 1 "+3.3V" H 3065 4773 50  0000 C CNN
+F 2 "" H 3050 4600 50  0001 C CNN
+F 3 "" H 3050 4600 50  0001 C CNN
+	1    3050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6173594A
+P 2900 5000
+F 0 "#PWR03" H 2900 4750 50  0001 C CNN
+F 1 "GND" H 2905 4827 50  0000 C CNN
+F 2 "" H 2900 5000 50  0001 C CNN
+F 3 "" H 2900 5000 50  0001 C CNN
+	1    2900 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 2450 4200 0    50   ~ 0
+Power and Filtering
+$Comp
+L power:GND #PWR02
+U 1 1 617355CE
+P 1700 4800
+F 0 "#PWR02" H 1700 4550 50  0001 C CNN
+F 1 "GND" H 1705 4627 50  0000 C CNN
+F 2 "" H 1700 4800 50  0001 C CNN
+F 3 "" H 1700 4800 50  0001 C CNN
+	1    1700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4700 3050 4700
+$Comp
+L Device:R_POT RV2
+U 1 1 616E74CB
+P 3050 4850
+F 0 "RV2" H 3350 4950 50  0000 R CNN
+F 1 "R_Trim (10k)" H 3350 5050 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 3050 4850 50  0001 C CNN
+F 3 "~" H 3050 4850 50  0001 C CNN
+	1    3050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4850 3200 5000
+Wire Wire Line
+	3200 5000 3050 5000
+Connection ~ 3050 5000
+Wire Wire Line
+	2900 4800 2900 5000
+Connection ~ 2900 5000
+Wire Wire Line
+	2900 5000 3050 5000
+$Comp
+L esp_board:DNT04S0A0S03NFA PS1
+U 1 1 61CAEF4C
+P 2900 4600
+F 0 "PS1" H 3500 4865 50  0000 C CNN
+F 1 "DNT04S0A0S03NFA" H 3500 4774 50  0000 C CNN
+F 2 "DNT04S0A0S03NFA" H 3950 4700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/DNT04S0A0S03NFA.pdf" H 3950 4600 50  0001 L CNN
+F 4 "Non-Isolated DC/DC Converters DOSA POL I DC/DC Module, 3A" H 3950 4500 50  0001 L CNN "Description"
+F 5 "6.9" H 3950 4400 50  0001 L CNN "Height"
+F 6 "108-DNT04S0A0S03NFA" H 3950 4300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=108-DNT04S0A0S03NFA" H 3950 4200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Delta Electronics" H 3950 4100 50  0001 L CNN "Manufacturer_Name"
+F 9 "DNT04S0A0S03NFA" H 3950 4000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2900 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4600 1550 4600
+Wire Wire Line
+	1550 4600 1550 4700
+Connection ~ 1550 4700
+Wire Wire Line
+	1700 4700 1700 4800
 $EndSCHEMATC

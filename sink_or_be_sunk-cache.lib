@@ -643,6 +643,29 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
+# esp_board_DNT04S0A0S03NFA
+#
+DEF esp_board_DNT04S0A0S03NFA PS 0 30 Y Y 1 F N
+F0 "PS" 1050 300 50 H V L CNN
+F1 "esp_board_DNT04S0A0S03NFA" 1050 200 50 H V L CNN
+F2 "DNT04S0A0S03NFA" 1050 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/DNT04S0A0S03NFA.pdf" 1050 0 50 H I L CNN
+F4 "Non-Isolated DC/DC Converters DOSA POL I DC/DC Module, 3A" 1050 -100 50 H I L CNN "Description"
+F5 "6.9" 1050 -200 50 H I L CNN "Height"
+F6 "108-DNT04S0A0S03NFA" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=108-DNT04S0A0S03NFA" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Delta Electronics" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "DNT04S0A0S03NFA" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+X VOUT 1 0 0 200 R 50 50 0 0 P
+X TRIM 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X VIN 4 1200 0 200 L 50 50 0 0 P
+X ON/OFF 5 1200 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # esp_board_MCP608
 #
 DEF esp_board_MCP608 U 0 40 Y Y 1 F N
@@ -706,23 +729,6 @@ X W 6 -300 -150 100 R 50 50 1 1 I
 X ~G 7 -300 -250 100 R 50 50 1 1 I
 X GND 8 -300 -350 100 R 50 50 1 1 I
 X C 9 300 -350 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# esp_board_SwitchingRegulator
-#
-DEF esp_board_SwitchingRegulator U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "esp_board_SwitchingRegulator" 0 0 50 H V C CNN
-F2 "PCB_ESP32:SwitchingRegulator" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -350 350 250 -100 0 1 0 N
-X Vin 1 -450 250 100 R 50 50 1 1 W
-X On/Off 2 -450 100 100 R 50 50 1 1 I
-X GND 3 350 -50 100 L 50 50 1 1 W
-X Trim 4 350 100 100 L 50 50 1 1 W
-X Vout 5 350 250 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
