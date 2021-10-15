@@ -61,19 +61,6 @@ F 3 "https://www.infineon.com/dgdl/irl530npbf.pdf?fileId=5546d462533600a40153565
 	0    1    1    0   
 $EndComp
 $Comp
-L Motor:Motor_DC M?
-U 1 1 61603AE1
-P 2350 7550
-AR Path="/6154AAA6/61603AE1" Ref="M?"  Part="1" 
-AR Path="/61603AE1" Ref="M1"  Part="1" 
-F 0 "M1" V 2050 7450 50  0000 L CNN
-F 1 "Motor_DC" V 2150 7350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2350 7460 50  0001 C CNN
-F 3 "~" H 2350 7460 50  0001 C CNN
-	1    2350 7550
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 61603AEE
 P 1450 7550
@@ -104,17 +91,6 @@ F 2 "" H 2600 2550 50  0001 C CNN
 F 3 "" H 2600 2550 50  0001 C CNN
 	1    2600 2550
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male J19
-U 1 1 616C97AB
-P 1600 2350
-F 0 "J19" H 1700 2000 50  0000 R CNN
-F 1 "Display_Conn" H 2400 2000 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 1600 2350 50  0001 C CNN
-F 3 "~" H 1600 2350 50  0001 C CNN
-	1    1600 2350
-	1    0    0    1   
 $EndComp
 Text Notes 750  2550 0    50   ~ 0
 LCD:\nPIN | Signal\n3   | VSS\n4   | VDD\n5   | SCLK\n6   | SID\n8   | CS
@@ -160,30 +136,6 @@ F 3 "~" H 1100 3750 50  0001 C CNN
 	1    1100 3750
 	0    -1   1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x08_Male J?
-U 1 1 615DA703
-P 700 3450
-AR Path="/6158EAAB/615DA703" Ref="J?"  Part="1" 
-AR Path="/615DA703" Ref="J18"  Part="1" 
-F 0 "J18" H 800 3900 50  0000 R CNN
-F 1 "Keypad_Conn" H 1350 3900 50  0000 R CNN
-F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 700 3450 50  0001 C CNN
-F 3 "~" H 700 3450 50  0001 C CNN
-	1    700  3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L grid:MCP608 U4
-U 1 1 6160D0C5
-P 4750 4550
-F 0 "U4" H 4900 4800 50  0000 L CNN
-F 1 "MCP608" H 4850 4700 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4750 4550 50  0001 C CNN
-F 3 "https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/11177f.pdf" H 4750 4550 50  0001 C CNN
-	1    4750 4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4650 4800 4650 4900
 Connection ~ 4750 4900
@@ -202,19 +154,6 @@ Wire Wire Line
 	5400 5000 5650 5000
 Wire Wire Line
 	5400 4850 5400 5000
-$Comp
-L Device:Speaker LS?
-U 1 1 615C22C6
-P 6050 4700
-AR Path="/6144DCFC/615C22C6" Ref="LS?"  Part="1" 
-AR Path="/615C22C6" Ref="LS1"  Part="1" 
-F 0 "LS1" H 5950 4450 50  0000 L CNN
-F 1 "Speaker" H 5900 4350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 6050 4500 50  0001 C CNN
-F 3 "~" H 6040 4650 50  0001 C CNN
-	1    6050 4700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 615C22C0
@@ -396,17 +335,6 @@ F 3 "" H 9250 4400 50  0001 C CNN
 	1    9250 4400
 	-1   0    0    -1  
 $EndComp
-$Comp
-L sink_or_be_sunk-rescue:USB_B_Micro-Connector J23
-U 1 1 61591780
-P 10000 4750
-F 0 "J23" H 10057 5217 50  0000 C CNN
-F 1 "USB_B_Micro" H 10057 5126 50  0000 C CNN
-F 2 "PCB_ESP32:USB_Micro_B_Female_Vert_1051330001" H 10150 4700 50  0001 C CNN
-F 3 "~" H 10150 4700 50  0001 C CNN
-	1    10000 4750
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 9500 4950
 Wire Wire Line
 	7650 4750 7400 4750
@@ -544,19 +472,6 @@ F 3 "" H 3200 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	850  6150 1700 6150
-$Comp
-L grid:SN74HC151N U?
-U 1 1 61628C20
-P 2000 6200
-AR Path="/6154E4DA/61628C20" Ref="U?"  Part="1" 
-AR Path="/61628C20" Ref="U1"  Part="1" 
-F 0 "U1" H 2000 5635 50  0000 C CNN
-F 1 "SN74HC151N" H 2000 5726 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6200 50  0001 C CNN
-F 3 "" H 2050 6200 50  0001 C CNN
-	1    2000 6200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	950  3550 900  3550
 Wire Wire Line
@@ -893,12 +808,12 @@ Wire Notes Line
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6160EB38
-P 7250 1450
-F 0 "H2" H 7350 1496 50  0000 L CNN
-F 1 "Mounting" H 7350 1405 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 1450 50  0001 C CNN
-F 3 "~" H 7250 1450 50  0001 C CNN
-	1    7250 1450
+P 7250 950
+F 0 "H2" H 7350 996 50  0000 L CNN
+F 1 "Mounting" H 7350 905 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 950 50  0001 C CNN
+F 3 "~" H 7250 950 50  0001 C CNN
+	1    7250 950 
 	1    0    0    -1  
 $EndComp
 Text Notes 7250 4250 0    50   ~ 0
@@ -913,8 +828,6 @@ Text Notes 3700 5550 0    50   ~ 0
 LIPO Charger
 Text Notes 650  5550 0    50   ~ 0
 Ship Select
-Text Notes 2650 4150 0    50   ~ 0
-Power and Filtering
 $Comp
 L power:VBUS #PWR015
 U 1 1 615AEF27
@@ -1045,7 +958,6 @@ Wire Wire Line
 	4400 5150 5050 5150
 Wire Wire Line
 	5050 4550 5400 4550
-Connection ~ 5050 4550
 Wire Wire Line
 	7250 6200 8050 6200
 Wire Wire Line
@@ -1061,33 +973,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 6200 8250 6150
 $Comp
-L Connector:Conn_01x06_Female J2
-U 1 1 61921F84
-P 10000 1050
-F 0 "J2" H 9800 1450 50  0000 L CNN
-F 1 "Grid_Conn" H 9800 1350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10000 1050 50  0001 C CNN
-F 3 "~" H 10000 1050 50  0001 C CNN
-	1    10000 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J3
-U 1 1 619426C2
-P 10500 1050
-F 0 "J3" H 10300 1450 50  0000 L CNN
-F 1 "Grid_Conn" H 10300 1350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10500 1050 50  0001 C CNN
-F 3 "~" H 10500 1050 50  0001 C CNN
-	1    10500 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 850  10300 850 
-Connection ~ 10300 850 
-Wire Wire Line
-	10300 850  9800 850 
-$Comp
 L power:+3.3V #PWR037
 U 1 1 61A90FDD
 P 8700 750
@@ -1100,29 +985,6 @@ F 3 "" H 8700 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9800 850  9800 750 
-Wire Wire Line
-	9800 750  9200 750 
-Connection ~ 9800 850 
-Connection ~ 9200 750 
-Wire Wire Line
-	9200 750  8700 750 
-Connection ~ 9800 950 
-Wire Wire Line
-	9800 950  10300 950 
-Connection ~ 10300 950 
-Wire Wire Line
-	10300 950  10800 950 
-Wire Wire Line
-	10800 1050 10300 1050
-Connection ~ 10300 1050
-Wire Wire Line
-	10300 1050 9800 1050
-Connection ~ 9200 1350
-Wire Wire Line
-	9200 1350 8700 1350
-Connection ~ 9800 1350
-Wire Wire Line
-	9800 1350 9200 1350
 Text Label 8600 850  0    50   ~ 0
 LED_OUT
 $Comp
@@ -1143,42 +1005,9 @@ MUX_COL_SEL0
 Text Label 8600 950  0    50   ~ 0
 MUX_COL_SEL1
 Wire Wire Line
-	8600 950  9200 950 
-Wire Wire Line
-	8600 1050 9200 1050
-Wire Wire Line
-	8600 1150 9200 1150
-Wire Wire Line
 	8600 1250 9200 1250
 Wire Wire Line
 	8600 850  9200 850 
-$Comp
-L Connector:Conn_01x06_Female J7
-U 1 1 61C11336
-P 10500 2050
-F 0 "J7" H 10300 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 10300 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10500 2050 50  0001 C CNN
-F 3 "~" H 10500 2050 50  0001 C CNN
-	1    10500 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J8
-U 1 1 61C1133C
-P 11000 2050
-F 0 "J8" H 10800 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 10800 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 11000 2050 50  0001 C CNN
-F 3 "~" H 11000 2050 50  0001 C CNN
-	1    11000 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 1850 10300 1850
-Connection ~ 10300 1850
-Wire Wire Line
-	10300 1850 9800 1850
 $Comp
 L power:+3.3V #PWR039
 U 1 1 61C11345
@@ -1190,26 +1019,6 @@ F 3 "" H 8700 1850 50  0001 C CNN
 	1    8700 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 1850 8700 1850
-Wire Wire Line
-	9800 1950 10300 1950
-Connection ~ 10300 1950
-Wire Wire Line
-	10300 1950 10800 1950
-Wire Wire Line
-	10800 2050 10300 2050
-Connection ~ 10300 2050
-Wire Wire Line
-	10300 2050 9800 2050
-Wire Wire Line
-	10800 2350 10300 2350
-Connection ~ 10300 2350
-Wire Wire Line
-	10800 2150 10300 2150
-Connection ~ 10300 2150
-Wire Wire Line
-	10300 2150 9800 2150
 $Comp
 L power:GND #PWR040
 U 1 1 61C11378
@@ -1228,43 +1037,7 @@ MUX_COL_SEL0
 Text Label 8600 1950 0    50   ~ 0
 MUX_COL_SEL1
 Wire Wire Line
-	8600 1950 9200 1950
-Wire Wire Line
-	8600 2050 9200 2050
-Wire Wire Line
-	8600 2150 9200 2150
-Wire Wire Line
 	8600 2250 9200 2250
-Wire Wire Line
-	8700 2350 9200 2350
-$Comp
-L Connector:Conn_01x06_Female J5
-U 1 1 61C5494A
-P 9400 2050
-F 0 "J5" H 9200 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 9200 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 9400 2050 50  0001 C CNN
-F 3 "~" H 9400 2050 50  0001 C CNN
-	1    9400 2050
-	1    0    0    -1  
-$EndComp
-Connection ~ 9200 2350
-Wire Wire Line
-	9800 1850 9200 1850
-Connection ~ 9800 1850
-Connection ~ 9200 1850
-Wire Wire Line
-	9200 1950 9800 1950
-Connection ~ 9200 1950
-Connection ~ 9800 1950
-Wire Wire Line
-	9800 2050 9200 2050
-Connection ~ 9800 2050
-Connection ~ 9200 2050
-Wire Wire Line
-	9200 2150 9800 2150
-Connection ~ 9200 2150
-Connection ~ 9800 2150
 $Comp
 L power:+3.3V #PWR041
 U 1 1 61CE24E4
@@ -1349,28 +1122,6 @@ F 3 "~" H 2500 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 2550 2600 2550
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 6231D343
-P 7250 850
-F 0 "H1" H 7350 899 50  0000 L CNN
-F 1 "ESP_GND_Pad_Hole" H 7350 808 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7250 850 50  0001 C CNN
-F 3 "~" H 7250 850 50  0001 C CNN
-	1    7250 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR035
-U 1 1 6234535B
-P 7250 950
-F 0 "#PWR035" H 7250 700 50  0001 C CNN
-F 1 "GND" H 7255 777 50  0000 C CNN
-F 2 "" H 7250 950 50  0001 C CNN
-F 3 "" H 7250 950 50  0001 C CNN
-	1    7250 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 3500 8250 3500
 Wire Wire Line
@@ -1378,34 +1129,34 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 6297244E
-P 7250 1700
-F 0 "H3" H 7350 1746 50  0000 L CNN
-F 1 "Mounting" H 7350 1655 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 1700 50  0001 C CNN
-F 3 "~" H 7250 1700 50  0001 C CNN
-	1    7250 1700
+P 7250 1550
+F 0 "H3" H 7350 1596 50  0000 L CNN
+F 1 "Mounting" H 7350 1505 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 1550 50  0001 C CNN
+F 3 "~" H 7250 1550 50  0001 C CNN
+	1    7250 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 6297281E
-P 7850 1450
-F 0 "H4" H 7950 1496 50  0000 L CNN
-F 1 "Mounting" H 7950 1405 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 1450 50  0001 C CNN
-F 3 "~" H 7850 1450 50  0001 C CNN
-	1    7850 1450
+P 7850 950
+F 0 "H4" H 7950 996 50  0000 L CNN
+F 1 "Mounting" H 7950 905 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 950 50  0001 C CNN
+F 3 "~" H 7850 950 50  0001 C CNN
+	1    7850 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 62972B2A
-P 7850 1700
-F 0 "H5" H 7950 1746 50  0000 L CNN
-F 1 "Mounting" H 7950 1655 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 1700 50  0001 C CNN
-F 3 "~" H 7850 1700 50  0001 C CNN
-	1    7850 1700
+P 7850 1550
+F 0 "H5" H 7950 1596 50  0000 L CNN
+F 1 "Mounting" H 7950 1505 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 1550 50  0001 C CNN
+F 3 "~" H 7850 1550 50  0001 C CNN
+	1    7850 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1703,7 +1454,7 @@ AR Path="/613B739E/6147878D" Ref="U?"  Part="1"
 AR Path="/6147878D" Ref="U5"  Part="1" 
 F 0 "U5" H 5200 2700 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 5250 2600 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5350 750 50  0001 C CNN
+F 2 "PCB_ESP32:ESP32-WROOM-32" H 5350 750 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5050 2300 50  0001 C CNN
 	1    5350 2250
 	1    0    0    -1  
@@ -1834,24 +1585,6 @@ Wire Wire Line
 	5950 2050 6700 2050
 Wire Wire Line
 	6700 1450 5950 1450
-Wire Wire Line
-	9200 950  9800 950 
-Connection ~ 9200 950 
-Wire Wire Line
-	9200 1050 9800 1050
-Connection ~ 9200 1050
-Connection ~ 9800 1050
-$Comp
-L grid:R_POT RV1
-U 1 1 64FDA131
-P 5400 4700
-F 0 "RV1" H 5331 4746 50  0000 R CNN
-F 1 "R_POT" H 5331 4655 50  0000 R CNN
-F 2 "PCB_ESP32:PinHeader_1x07_P2.54mm_Vertical" H 5400 4700 50  0001 C CNN
-F 3 "" H 5400 4700 50  0001 C CNN
-	1    5400 4700
-	1    0    0    -1  
-$EndComp
 Text Label 8600 1250 0    50   ~ 0
 MUX_R0
 Text Label 8600 2250 0    50   ~ 0
@@ -1865,110 +1598,15 @@ MUX_R7
 Wire Wire Line
 	9800 1250 9450 1250
 Wire Wire Line
-	9800 1350 10300 1350
-Wire Wire Line
 	10300 1250 10000 1250
-$Comp
-L Connector:Conn_01x06_Female J4
-U 1 1 6196DC3C
-P 11000 1050
-F 0 "J4" H 10800 1450 50  0000 L CNN
-F 1 "Grid_Conn" H 10800 1350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 11000 1050 50  0001 C CNN
-F 3 "~" H 11000 1050 50  0001 C CNN
-	1    11000 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10800 1250 10500 1250
-Wire Wire Line
-	9200 2350 9800 2350
-Wire Wire Line
-	10300 2350 9800 2350
-Connection ~ 9800 2350
-$Comp
-L Connector:Conn_01x06_Female J6
-U 1 1 61C11330
-P 10000 2050
-F 0 "J6" H 9800 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 9800 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 10000 2050 50  0001 C CNN
-F 3 "~" H 10000 2050 50  0001 C CNN
-	1    10000 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9800 2250 9450 2250
 Wire Wire Line
 	10300 2250 10000 2250
 Wire Wire Line
 	10800 2250 10500 2250
-$Comp
-L Connector:Conn_01x02_Female J9
-U 1 1 61CE250A
-P 9300 2900
-F 0 "J9" H 9100 3100 50  0000 L CNN
-F 1 "Grid_Conn" H 9100 3000 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9300 2900 50  0001 C CNN
-F 3 "~" H 9300 2900 50  0001 C CNN
-	1    9300 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 2900 8700 2900
-Wire Wire Line
-	9100 3000 8700 3000
-$Comp
-L Connector:Conn_01x02_Female J10
-U 1 1 61EE3CE7
-P 10000 2900
-F 0 "J10" H 9800 3100 50  0000 L CNN
-F 1 "Grid_Conn" H 9800 3000 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10000 2900 50  0001 C CNN
-F 3 "~" H 10000 2900 50  0001 C CNN
-	1    10000 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J11
-U 1 1 61F00D33
-P 10500 2900
-F 0 "J11" H 10300 3100 50  0000 L CNN
-F 1 "Grid_Conn" H 10300 3000 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10500 2900 50  0001 C CNN
-F 3 "~" H 10500 2900 50  0001 C CNN
-	1    10500 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J12
-U 1 1 61F1D68F
-P 11000 2900
-F 0 "J12" H 10800 3100 50  0000 L CNN
-F 1 "Grid_Conn" H 10800 3000 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 11000 2900 50  0001 C CNN
-F 3 "~" H 11000 2900 50  0001 C CNN
-	1    11000 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 2900 9800 2900
-Connection ~ 9100 2900
-Connection ~ 9800 2900
-Wire Wire Line
-	9800 2900 10300 2900
-Connection ~ 10300 2900
-Wire Wire Line
-	10300 2900 10800 2900
-Wire Wire Line
-	10800 3000 10300 3000
-Connection ~ 9100 3000
-Connection ~ 9800 3000
-Wire Wire Line
-	9800 3000 9100 3000
-Connection ~ 10300 3000
-Wire Wire Line
-	10300 3000 9800 3000
 $Comp
 L power:+3.3V #PWR043
 U 1 1 61FD13C8
@@ -1991,75 +1629,6 @@ F 3 "" H 8700 3700 50  0001 C CNN
 	1    8700 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J13
-U 1 1 61FD13D4
-P 9300 3600
-F 0 "J13" H 9100 3800 50  0000 L CNN
-F 1 "Grid_Conn" H 9100 3700 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9300 3600 50  0001 C CNN
-F 3 "~" H 9300 3600 50  0001 C CNN
-	1    9300 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 3600 8700 3600
-Wire Wire Line
-	9100 3700 8700 3700
-$Comp
-L Connector:Conn_01x02_Female J14
-U 1 1 61FD13DC
-P 10000 3600
-F 0 "J14" H 9800 3800 50  0000 L CNN
-F 1 "Grid_Conn" H 9800 3700 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10000 3600 50  0001 C CNN
-F 3 "~" H 10000 3600 50  0001 C CNN
-	1    10000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J15
-U 1 1 61FD13E2
-P 10500 3600
-F 0 "J15" H 10300 3800 50  0000 L CNN
-F 1 "Grid_Conn" H 10300 3700 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10500 3600 50  0001 C CNN
-F 3 "~" H 10500 3600 50  0001 C CNN
-	1    10500 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J16
-U 1 1 61FD13E8
-P 11000 3600
-F 0 "J16" H 10800 3800 50  0000 L CNN
-F 1 "Grid_Conn" H 10800 3700 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 11000 3600 50  0001 C CNN
-F 3 "~" H 11000 3600 50  0001 C CNN
-	1    11000 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 3600 9800 3600
-Connection ~ 9100 3600
-Connection ~ 9800 3600
-Wire Wire Line
-	9800 3600 10300 3600
-Connection ~ 10300 3600
-Wire Wire Line
-	10300 3600 10800 3600
-Wire Wire Line
-	10800 3700 10300 3700
-Connection ~ 9100 3700
-Connection ~ 9800 3700
-Wire Wire Line
-	9800 3700 9100 3700
-Connection ~ 10300 3700
-Wire Wire Line
-	10300 3700 9800 3700
-Connection ~ 10300 1350
-Wire Wire Line
-	10300 1350 10800 1350
 Text Label 850  6350 0    50   ~ 0
 MUX_R5
 Text Label 850  6450 0    50   ~ 0
@@ -2083,103 +1652,83 @@ MUX_R2
 Text Label 9450 1250 0    50   ~ 0
 MUX_R1
 $Comp
-L Connector:Conn_01x07_Female J1
-U 1 1 6191D287
-P 9400 1050
-F 0 "J1" H 9050 1450 50  0000 L CNN
-F 1 "Grid_Conn_LED" H 9200 1450 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B7B-EH-A_1x07_P2.50mm_Vertical" H 9400 1050 50  0001 C CNN
-F 3 "~" H 9400 1050 50  0001 C CNN
-	1    9400 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 1150 9800 1150
-Connection ~ 9200 1150
-Connection ~ 9800 1150
-Wire Wire Line
-	9800 1150 10300 1150
-Connection ~ 10300 1150
-Wire Wire Line
-	10300 1150 10800 1150
-$Comp
 L power:+BATT #PWR014
 U 1 1 61C44AB1
-P 1600 4300
-F 0 "#PWR014" H 1600 4150 50  0001 C CNN
-F 1 "+BATT" H 1615 4473 50  0000 C CNN
-F 2 "" H 1600 4300 50  0001 C CNN
-F 3 "" H 1600 4300 50  0001 C CNN
-	1    1600 4300
+P 1550 4300
+F 0 "#PWR014" H 1550 4150 50  0001 C CNN
+F 1 "+BATT" H 1565 4473 50  0000 C CNN
+F 2 "" H 1550 4300 50  0001 C CNN
+F 3 "" H 1550 4300 50  0001 C CNN
+	1    1550 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R16
 U 1 1 61B8EE7E
-P 900 4850
-F 0 "R16" H 650 4950 50  0000 L CNN
-F 1 "100k" H 650 4850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 830 4850 50  0001 C CNN
-F 3 "~" H 900 4850 50  0001 C CNN
-	1    900  4850
+P 850 4850
+F 0 "R16" H 600 4950 50  0000 L CNN
+F 1 "100k" H 600 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 780 4850 50  0001 C CNN
+F 3 "~" H 850 4850 50  0001 C CNN
+	1    850  4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VBUS #PWR06
 U 1 1 616721DB
-P 900 4300
-F 0 "#PWR06" H 900 4150 50  0001 C CNN
-F 1 "VBUS" H 915 4473 50  0000 C CNN
-F 2 "" H 900 4300 50  0001 C CNN
-F 3 "" H 900 4300 50  0001 C CNN
-	1    900  4300
+P 850 4300
+F 0 "#PWR06" H 850 4150 50  0001 C CNN
+F 1 "VBUS" H 865 4473 50  0000 C CNN
+F 2 "" H 850 4300 50  0001 C CNN
+F 3 "" H 850 4300 50  0001 C CNN
+	1    850  4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  4300 900  4500
+	850  4300 850  4500
 Wire Wire Line
-	900  4700 1000 4700
-Connection ~ 900  4700
+	850  4700 950  4700
+Connection ~ 850  4700
 $Comp
 L power:GND #PWR07
 U 1 1 61C53673
-P 900 5000
-F 0 "#PWR07" H 900 4750 50  0001 C CNN
-F 1 "GND" H 905 4827 50  0000 C CNN
-F 2 "" H 900 5000 50  0001 C CNN
-F 3 "" H 900 5000 50  0001 C CNN
-	1    900  5000
+P 850 5000
+F 0 "#PWR07" H 850 4750 50  0001 C CNN
+F 1 "GND" H 855 4827 50  0000 C CNN
+F 2 "" H 850 5000 50  0001 C CNN
+F 3 "" H 850 5000 50  0001 C CNN
+	1    850  5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 4500 900  4500
-Connection ~ 900  4500
+	1250 4500 850  4500
+Connection ~ 850  4500
 Wire Wire Line
-	900  4500 900  4700
+	850  4500 850  4700
 $Comp
 L Device:D D1
 U 1 1 61CAFF58
-P 1150 4700
-F 0 "D1" V 1104 4780 50  0000 L CNN
-F 1 "D" V 1195 4780 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1150 4700 50  0001 C CNN
-F 3 "https://www.onsemi.com/pdf/datasheet/1n5817-d.pdf" H 1150 4700 50  0001 C CNN
-	1    1150 4700
+P 1100 4700
+F 0 "D1" V 1054 4780 50  0000 L CNN
+F 1 "D" V 1145 4780 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1100 4700 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/1n5817-d.pdf" H 1100 4700 50  0001 C CNN
+	1    1100 4700
 	-1   0    0    1   
 $EndComp
-Text Label 1300 4700 0    50   ~ 0
+Text Label 1250 4700 0    50   ~ 0
 Vin
 Wire Wire Line
-	1600 4700 1300 4700
+	1550 4700 1250 4700
 $Comp
 L Device:Q_PMOS_GDS Q2
 U 1 1 61B8D24F
-P 1500 4500
-F 0 "Q2" H 1300 4700 50  0000 L CNN
-F 1 "Q_PMOS_GDS" H 950 4600 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 1700 4600 50  0001 C CNN
-F 3 "https://rocelec.widen.net/view/pdf/6e63ma1bli/ONSM-S-A0003587829-1.pdf?t.download=true&u=5oefqw~" H 1500 4500 50  0001 C CNN
-	1    1500 4500
+P 1450 4500
+F 0 "Q2" H 1250 4700 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 900 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 1650 4600 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/6e63ma1bli/ONSM-S-A0003587829-1.pdf?t.download=true&u=5oefqw~" H 1450 4500 50  0001 C CNN
+	1    1450 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2218,86 +1767,523 @@ Wire Notes Line
 	550  1850 3100 1850
 Wire Notes Line
 	550  2800 3100 2800
-$Comp
-L Device:R_POT RV2
-U 1 1 616E74CB
-P 2900 4850
-F 0 "RV2" H 3300 4900 50  0000 R CNN
-F 1 "R_Trim (10k)" H 3450 5000 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 2900 4850 50  0001 C CNN
-F 3 "~" H 2900 4850 50  0001 C CNN
-	1    2900 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 617355CE
-P 1950 4700
-F 0 "#PWR02" H 1950 4450 50  0001 C CNN
-F 1 "GND" H 1955 4527 50  0000 C CNN
-F 2 "" H 1950 4700 50  0001 C CNN
-F 3 "" H 1950 4700 50  0001 C CNN
-	1    1950 4700
-	1    0    0    -1  
-$EndComp
 Text Notes -1400 4750 0    50   ~ 0
 “If the negative On/Off function is not used, \ntie the pin to GND. (module will be On)”\n(datasheet pg.8 above Figure 26)
-Wire Wire Line
-	2750 4850 2750 5000
+Text Notes 2000 5100 0    50   ~ 0
+R_trim = 3160\nfor 3.3V output
 $Comp
-L power:GND #PWR03
-U 1 1 6173594A
-P 2800 5000
-F 0 "#PWR03" H 2800 4750 50  0001 C CNN
-F 1 "GND" H 2805 4827 50  0000 C CNN
-F 2 "" H 2800 5000 50  0001 C CNN
-F 3 "" H 2800 5000 50  0001 C CNN
-	1    2800 5000
+L Connector:USB_B_Micro J17
+U 1 1 619C22A6
+P 10000 4750
+F 0 "J17" H 9770 4739 50  0000 R CNN
+F 1 "USB_B_Micro" H 9770 4648 50  0000 R CNN
+F 2 "PCB_ESP32:USB_Micro_B_Female_Vert_1051330001" H 10150 4700 50  0001 C CNN
+F 3 "~" H 10150 4700 50  0001 C CNN
+	1    10000 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L esp_board:R_POT RV1
+U 1 1 619E3CEA
+P 5400 4700
+F 0 "RV1" H 5300 4650 50  0000 R CNN
+F 1 "R_POT" H 5300 4550 50  0000 R CNN
+F 2 "PCB_ESP32:PinHeader_1x07_P2.54mm_Vertical" H 5400 4700 50  0001 C CNN
+F 3 "" H 5400 4700 50  0001 C CNN
+	1    5400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L esp_board:MCP608 U4
+U 1 1 619E4E71
+P 4750 4550
+F 0 "U4" H 5000 4650 50  0000 L CNN
+F 1 "MCP608" H 5150 4650 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4750 4550 50  0001 C CNN
+F 3 "" H 4750 4550 50  0001 C CNN
+	1    4750 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 4550
+Wire Wire Line
+	8700 1350 9200 1350
+Wire Wire Line
+	8600 1150 9200 1150
+Wire Wire Line
+	8600 1050 9200 1050
+Wire Wire Line
+	8600 950  9200 950 
+Wire Wire Line
+	8700 750  9200 750 
+$Comp
+L JST_Conn:640456-7 J1
+U 1 1 61A698AE
+P 9300 1050
+F 0 "J1" H 9250 1550 50  0000 L CNN
+F 1 "Grid_Conn" H 9100 1450 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-7" H 9050 650 50  0001 L BNN
+F 3 "" H 9300 1050 50  0001 L BNN
+F 4 "7" H 9300 1050 50  0001 L BNN "Number_of_Positions"
+	1    9300 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 750 
+Wire Wire Line
+	9200 750  9800 750 
+Connection ~ 9200 950 
+Connection ~ 9200 1050
+Connection ~ 9200 1150
+Connection ~ 9200 1350
+$Comp
+L JST_Conn:640456-6 J2
+U 1 1 61A87FCE
+P 9900 1200
+F 0 "J2" H 9850 1750 50  0000 L CNN
+F 1 "640456-6" H 9700 1650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 9600 900 50  0001 L BNN
+F 3 "" H 9900 1200 50  0001 L BNN
+F 4 "6" H 9900 1200 50  0001 L BNN "Number_of_Positions"
+	1    9900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J3
+U 1 1 61A89BE3
+P 10400 1200
+F 0 "J3" H 10350 1750 50  0000 L CNN
+F 1 "640456-6" H 10200 1650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10100 900 50  0001 L BNN
+F 3 "" H 10400 1200 50  0001 L BNN
+F 4 "6" H 10400 1200 50  0001 L BNN "Number_of_Positions"
+	1    10400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J4
+U 1 1 61A8A0CA
+P 10900 1200
+F 0 "J4" H 10850 1750 50  0000 L CNN
+F 1 "640456-6" H 10700 1650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10600 900 50  0001 L BNN
+F 3 "" H 10900 1200 50  0001 L BNN
+F 4 "6" H 10900 1200 50  0001 L BNN "Number_of_Positions"
+	1    10900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J5
+U 1 1 61A8A3A4
+P 9300 2200
+F 0 "J5" H 9250 2750 50  0000 L CNN
+F 1 "640456-6" H 9100 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 9000 1900 50  0001 L BNN
+F 3 "" H 9300 2200 50  0001 L BNN
+F 4 "6" H 9300 2200 50  0001 L BNN "Number_of_Positions"
+	1    9300 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 4700 2900 4700
+	9800 850  10300 850 
 Wire Wire Line
-	2900 5000 2800 5000
-Connection ~ 2800 5000
+	9200 950  9800 950 
 Wire Wire Line
-	2800 5000 2750 5000
+	9200 1050 9800 1050
 Wire Wire Line
-	3050 4850 3050 5000
+	9200 1150 9800 1150
 Wire Wire Line
-	3050 5000 2900 5000
-Connection ~ 2900 5000
-Text Notes 2100 5100 0    50   ~ 0
-R_trim = 3160\nfor 3.3V output
+	9200 1350 9800 1350
+Connection ~ 9800 850 
+Connection ~ 9800 950 
+Wire Wire Line
+	9800 950  10300 950 
+Connection ~ 9800 1050
+Wire Wire Line
+	9800 1050 10300 1050
+Connection ~ 9800 1150
+Wire Wire Line
+	9800 1150 10300 1150
+Connection ~ 9800 1350
+Wire Wire Line
+	9800 1350 10300 1350
+Connection ~ 10300 850 
+Wire Wire Line
+	10300 850  10800 850 
+Connection ~ 10300 950 
+Wire Wire Line
+	10300 950  10800 950 
+Connection ~ 10300 1050
+Wire Wire Line
+	10300 1050 10800 1050
+Connection ~ 10300 1150
+Wire Wire Line
+	10300 1150 10800 1150
+Connection ~ 10300 1350
+Wire Wire Line
+	10300 1350 10800 1350
+$Comp
+L JST_Conn:640456-6 J6
+U 1 1 61B3E606
+P 9900 2200
+F 0 "J6" H 9850 2750 50  0000 L CNN
+F 1 "640456-6" H 9700 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 9600 1900 50  0001 L BNN
+F 3 "" H 9900 2200 50  0001 L BNN
+F 4 "6" H 9900 2200 50  0001 L BNN "Number_of_Positions"
+	1    9900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J7
+U 1 1 61B3E982
+P 10400 2200
+F 0 "J7" H 10350 2750 50  0000 L CNN
+F 1 "640456-6" H 10200 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10100 1900 50  0001 L BNN
+F 3 "" H 10400 2200 50  0001 L BNN
+F 4 "6" H 10400 2200 50  0001 L BNN "Number_of_Positions"
+	1    10400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J8
+U 1 1 61B3EC9B
+P 10900 2200
+F 0 "J8" H 10850 2750 50  0000 L CNN
+F 1 "640456-6" H 10700 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10600 1900 50  0001 L BNN
+F 3 "" H 10900 2200 50  0001 L BNN
+F 4 "6" H 10900 2200 50  0001 L BNN "Number_of_Positions"
+	1    10900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1850 9200 1850
+Wire Wire Line
+	8600 1950 9200 1950
+Wire Wire Line
+	8600 2050 9200 2050
+Wire Wire Line
+	8600 2150 9200 2150
+Wire Wire Line
+	8700 2350 9200 2350
+Connection ~ 9200 1850
+Wire Wire Line
+	9200 1850 9800 1850
+Connection ~ 9200 1950
+Wire Wire Line
+	9200 1950 9800 1950
+Connection ~ 9200 2050
+Wire Wire Line
+	9200 2050 9800 2050
+Connection ~ 9200 2150
+Wire Wire Line
+	9200 2150 9800 2150
+Connection ~ 9200 2350
+Wire Wire Line
+	9200 2350 9800 2350
+Connection ~ 9800 1850
+Wire Wire Line
+	9800 1850 10300 1850
+Connection ~ 9800 1950
+Wire Wire Line
+	9800 1950 10300 1950
+Connection ~ 9800 2050
+Wire Wire Line
+	9800 2050 10300 2050
+Connection ~ 9800 2150
+Wire Wire Line
+	9800 2150 10300 2150
+Connection ~ 9800 2350
+Wire Wire Line
+	9800 2350 10300 2350
+Connection ~ 10300 1850
+Wire Wire Line
+	10300 1850 10800 1850
+Connection ~ 10300 1950
+Wire Wire Line
+	10300 1950 10800 1950
+Connection ~ 10300 2050
+Wire Wire Line
+	10300 2050 10800 2050
+Connection ~ 10300 2150
+Wire Wire Line
+	10300 2150 10800 2150
+Connection ~ 10300 2350
+Wire Wire Line
+	10300 2350 10800 2350
+$Comp
+L JST_Conn:640456-2 J10
+U 1 1 61BA241D
+P 9950 3000
+F 0 "J10" H 9900 3300 50  0000 L CNN
+F 1 "640456-2" H 9750 3200 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 9750 2900 50  0001 L BNN
+F 3 "" H 9950 3000 50  0001 L BNN
+	1    9950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-2 J11
+U 1 1 61BA36C6
+P 10450 3000
+F 0 "J11" H 10400 3300 50  0000 L CNN
+F 1 "640456-2" H 10250 3200 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 10250 2900 50  0001 L BNN
+F 3 "" H 10450 3000 50  0001 L BNN
+	1    10450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-2 J12
+U 1 1 61BA3965
+P 10900 3000
+F 0 "J12" H 10850 3300 50  0000 L CNN
+F 1 "640456-2" H 10700 3200 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 10700 2900 50  0001 L BNN
+F 3 "" H 10900 3000 50  0001 L BNN
+	1    10900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3000 9200 3000
+Wire Wire Line
+	8700 2900 9200 2900
+$Comp
+L JST_Conn:640456-2 J9
+U 1 1 61BA1C7E
+P 9300 3000
+F 0 "J9" H 9250 3300 50  0000 L CNN
+F 1 "640456-2" H 9100 3200 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 9100 2900 50  0001 L BNN
+F 3 "" H 9300 3000 50  0001 L BNN
+	1    9300 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 2900
+Connection ~ 9200 3000
+Wire Wire Line
+	9200 2900 9850 2900
+Wire Wire Line
+	9200 3000 9850 3000
+Connection ~ 9850 2900
+Connection ~ 9850 3000
+Wire Wire Line
+	9850 2900 10350 2900
+Wire Wire Line
+	9850 3000 10350 3000
+Connection ~ 10350 2900
+Wire Wire Line
+	10350 2900 10800 2900
+Connection ~ 10350 3000
+Wire Wire Line
+	10350 3000 10800 3000
+$Comp
+L JST_Conn:640456-2 J13
+U 1 1 61BA719A
+P 9300 3700
+F 0 "J13" H 9250 4000 50  0000 L CNN
+F 1 "640456-2" H 9100 3900 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 9100 3600 50  0001 L BNN
+F 3 "" H 9300 3700 50  0001 L BNN
+	1    9300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-2 J14
+U 1 1 61BA7D8F
+P 9950 3700
+F 0 "J14" H 9900 4000 50  0000 L CNN
+F 1 "640456-2" H 9750 3900 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 9750 3600 50  0001 L BNN
+F 3 "" H 9950 3700 50  0001 L BNN
+	1    9950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-2 J15
+U 1 1 61BA8593
+P 10450 3700
+F 0 "J15" H 10400 4000 50  0000 L CNN
+F 1 "640456-2" H 10250 3900 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 10250 3600 50  0001 L BNN
+F 3 "" H 10450 3700 50  0001 L BNN
+	1    10450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-2 J16
+U 1 1 61BA87B1
+P 10900 3700
+F 0 "J16" H 10850 4000 50  0000 L CNN
+F 1 "640456-2" H 10700 3900 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 10700 3600 50  0001 L BNN
+F 3 "" H 10900 3700 50  0001 L BNN
+	1    10900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3600 9200 3600
+Connection ~ 9200 3600
+Wire Wire Line
+	9200 3600 9850 3600
+Connection ~ 9850 3600
+Wire Wire Line
+	9850 3600 10350 3600
+Connection ~ 10350 3600
+Wire Wire Line
+	10350 3600 10800 3600
+Wire Wire Line
+	10800 3700 10350 3700
+Connection ~ 9200 3700
+Wire Wire Line
+	9200 3700 8700 3700
+Connection ~ 9850 3700
+Wire Wire Line
+	9850 3700 9200 3700
+Connection ~ 10350 3700
+Wire Wire Line
+	10350 3700 9850 3700
+Wire Wire Line
+	2900 4600 3050 4600
 $Comp
 L power:+3.3V #PWR017
 U 1 1 61719CD4
-P 2900 4550
-F 0 "#PWR017" H 2900 4400 50  0001 C CNN
-F 1 "+3.3V" H 2915 4723 50  0000 C CNN
-F 2 "" H 2900 4550 50  0001 C CNN
-F 3 "" H 2900 4550 50  0001 C CNN
-	1    2900 4550
+P 3050 4600
+F 0 "#PWR017" H 3050 4450 50  0001 C CNN
+F 1 "+3.3V" H 3065 4773 50  0000 C CNN
+F 2 "" H 3050 4600 50  0001 C CNN
+F 3 "" H 3050 4600 50  0001 C CNN
+	1    3050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6173594A
+P 2900 5000
+F 0 "#PWR03" H 2900 4750 50  0001 C CNN
+F 1 "GND" H 2905 4827 50  0000 C CNN
+F 2 "" H 2900 5000 50  0001 C CNN
+F 3 "" H 2900 5000 50  0001 C CNN
+	1    2900 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 2450 4200 0    50   ~ 0
+Power and Filtering
+$Comp
+L power:GND #PWR02
+U 1 1 617355CE
+P 1700 4800
+F 0 "#PWR02" H 1700 4550 50  0001 C CNN
+F 1 "GND" H 1705 4627 50  0000 C CNN
+F 2 "" H 1700 4800 50  0001 C CNN
+F 3 "" H 1700 4800 50  0001 C CNN
+	1    1700 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 4550 2900 4550
-Wire Wire Line
-	1750 4700 1600 4700
-Connection ~ 1600 4700
-Wire Wire Line
-	1950 4550 1750 4550
-Wire Wire Line
-	1750 4550 1750 4700
+	2900 4700 3050 4700
 $Comp
-L grid:SwitchingRegulator U2
-U 1 1 6198BEB8
-P 2400 4800
-F 0 "U2" H 2350 5315 50  0000 C CNN
-F 1 "SwitchingRegulator" H 2350 5224 50  0000 C CNN
-F 2 "PCB_ESP32:SwitchingRegulator" H 2400 4800 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/632/dele_s_a0000496181_1-2289578.pdf" H 2400 4800 50  0001 C CNN
-	1    2400 4800
+L Device:R_POT RV2
+U 1 1 616E74CB
+P 3050 4850
+F 0 "RV2" H 3350 4950 50  0000 R CNN
+F 1 "R_Trim (10k)" H 3350 5050 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 3050 4850 50  0001 C CNN
+F 3 "~" H 3050 4850 50  0001 C CNN
+	1    3050 4850
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4850 3200 5000
+Wire Wire Line
+	3200 5000 3050 5000
+Connection ~ 3050 5000
+Wire Wire Line
+	2900 4800 2900 5000
+Connection ~ 2900 5000
+Wire Wire Line
+	2900 5000 3050 5000
+$Comp
+L esp_board:DNT04S0A0S03NFA PS1
+U 1 1 61CAEF4C
+P 2900 4600
+F 0 "PS1" H 3500 4865 50  0000 C CNN
+F 1 "DNT04S0A0S03NFA" H 3500 4774 50  0000 C CNN
+F 2 "PCB_ESP32:DNT04S0A0S03NFA" H 3950 4700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/DNT04S0A0S03NFA.pdf" H 3950 4600 50  0001 L CNN
+F 4 "Non-Isolated DC/DC Converters DOSA POL I DC/DC Module, 3A" H 3950 4500 50  0001 L CNN "Description"
+F 5 "6.9" H 3950 4400 50  0001 L CNN "Height"
+F 6 "108-DNT04S0A0S03NFA" H 3950 4300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=108-DNT04S0A0S03NFA" H 3950 4200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Delta Electronics" H 3950 4100 50  0001 L CNN "Manufacturer_Name"
+F 9 "DNT04S0A0S03NFA" H 3950 4000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2900 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4600 1550 4600
+Wire Wire Line
+	1550 4600 1550 4700
+Connection ~ 1550 4700
+Wire Wire Line
+	1700 4700 1700 4800
+$Comp
+L JST_Conn:640456-5 J19
+U 1 1 620AD8DA
+P 1700 2350
+F 0 "J19" H 1693 1969 50  0000 C CNN
+F 1 "Display_Conn" H 1693 2060 50  0000 C CNN
+F 2 "JST_Conn:TE_640456-5" H 1450 2050 50  0001 L BNN
+F 3 "" H 1700 2350 50  0001 L BNN
+	1    1700 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L JST_Conn:640456-8 J18
+U 1 1 620AF989
+P 800 3550
+F 0 "J18" H 793 4164 50  0000 C CNN
+F 1 "Keypad_Conn" H 793 4073 50  0000 C CNN
+F 2 "JST_Conn:TE_640456-8" H 550 3150 50  0001 L BNN
+F 3 "" H 800 3550 50  0001 L BNN
+	1    800  3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 615C22C6
+P 6050 4700
+AR Path="/6144DCFC/615C22C6" Ref="LS?"  Part="1" 
+AR Path="/615C22C6" Ref="LS1"  Part="1" 
+F 0 "LS1" H 5950 4450 50  0000 L CNN
+F 1 "Speaker" H 5900 4350 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 6050 4500 50  0001 C CNN
+F 3 "~" H 6040 4650 50  0001 C CNN
+	1    6050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 61603AE1
+P 2350 7550
+AR Path="/6154AAA6/61603AE1" Ref="M?"  Part="1" 
+AR Path="/61603AE1" Ref="M1"  Part="1" 
+F 0 "M1" V 2050 7450 50  0000 L CNN
+F 1 "Motor_DC" V 2150 7350 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 2350 7460 50  0001 C CNN
+F 3 "~" H 2350 7460 50  0001 C CNN
+	1    2350 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L esp_board:SN74HC151N U1
+U 1 1 61A04FB0
+P 2000 6200
+F 0 "U1" H 2000 5650 50  0000 C CNN
+F 1 "SN74HC151N" H 2000 5750 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2000 6200
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
