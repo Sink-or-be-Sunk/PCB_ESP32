@@ -1,4 +1,9 @@
 (sym_lib_table
   (lib (name grid)(type Legacy)(uri ${KIPRJMOD}/grid.lib)(options "")(descr ""))
   (lib (name sink_or_be_sunk-rescue)(type Legacy)(uri ${KIPRJMOD}/sink_or_be_sunk-rescue.lib)(options "")(descr ""))
+  (lib (name 640456-2)(type Legacy)(uri ${KIPRJMOD}/conn/640456-2.lib)(options "")(descr ""))
+  (lib (name 640456-5)(type Legacy)(uri ${KIPRJMOD}/conn/640456-5.lib)(options "")(descr ""))
+  (lib (name 640456-6)(type Legacy)(uri ${KIPRJMOD}/conn/640456-6.lib)(options "")(descr ""))
+  (lib (name 640456-7)(type Legacy)(uri ${KIPRJMOD}/conn/640456-7.lib)(options "")(descr ""))
+  (lib (name 640456-8)(type Legacy)(uri ${KIPRJMOD}/conn/640456-8.lib)(options "")(descr ""))
 )
