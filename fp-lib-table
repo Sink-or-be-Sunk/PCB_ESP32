@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name PCB_ESP32)(type KiCad)(uri ${KIPRJMOD}/PCB_ESP32.pretty)(options "")(descr ""))
-  (lib (name conn)(type KiCad)(uri ${KIPRJMOD}/conn)(options "")(descr ""))
+  (lib (name JST_Conn)(type KiCad)(uri ${KIPRJMOD}/JST_Conn.pretty)(options "")(descr ""))
 )
