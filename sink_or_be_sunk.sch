@@ -61,19 +61,6 @@ F 3 "https://www.infineon.com/dgdl/irl530npbf.pdf?fileId=5546d462533600a40153565
 	0    1    1    0   
 $EndComp
 $Comp
-L Motor:Motor_DC M?
-U 1 1 61603AE1
-P 2350 7550
-AR Path="/6154AAA6/61603AE1" Ref="M?"  Part="1" 
-AR Path="/61603AE1" Ref="M1"  Part="1" 
-F 0 "M1" V 2050 7450 50  0000 L CNN
-F 1 "Motor_DC" V 2150 7350 50  0000 L CNN
-F 2 "conn:TE_640456-2" H 2350 7460 50  0001 C CNN
-F 3 "~" H 2350 7460 50  0001 C CNN
-	1    2350 7550
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 61603AEE
 P 1450 7550
@@ -104,17 +91,6 @@ F 2 "" H 2600 2550 50  0001 C CNN
 F 3 "" H 2600 2550 50  0001 C CNN
 	1    2600 2550
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male J19
-U 1 1 616C97AB
-P 1600 2350
-F 0 "J19" H 1700 2000 50  0000 R CNN
-F 1 "Display_Conn" H 2400 2000 50  0000 R CNN
-F 2 "conn:TE_640456-5" H 1600 2350 50  0001 C CNN
-F 3 "~" H 1600 2350 50  0001 C CNN
-	1    1600 2350
-	1    0    0    1   
 $EndComp
 Text Notes 750  2550 0    50   ~ 0
 LCD:\nPIN | Signal\n3   | VSS\n4   | VDD\n5   | SCLK\n6   | SID\n8   | CS
@@ -160,19 +136,6 @@ F 3 "~" H 1100 3750 50  0001 C CNN
 	1    1100 3750
 	0    -1   1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x08_Male J?
-U 1 1 615DA703
-P 700 3450
-AR Path="/6158EAAB/615DA703" Ref="J?"  Part="1" 
-AR Path="/615DA703" Ref="J18"  Part="1" 
-F 0 "J18" H 800 3900 50  0000 R CNN
-F 1 "Keypad_Conn" H 1350 3900 50  0000 R CNN
-F 2 "conn:TE_640456-8" H 700 3450 50  0001 C CNN
-F 3 "~" H 700 3450 50  0001 C CNN
-	1    700  3450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4650 4800 4650 4900
 Connection ~ 4750 4900
@@ -191,19 +154,6 @@ Wire Wire Line
 	5400 5000 5650 5000
 Wire Wire Line
 	5400 4850 5400 5000
-$Comp
-L Device:Speaker LS?
-U 1 1 615C22C6
-P 6050 4700
-AR Path="/6144DCFC/615C22C6" Ref="LS?"  Part="1" 
-AR Path="/615C22C6" Ref="LS1"  Part="1" 
-F 0 "LS1" H 5950 4450 50  0000 L CNN
-F 1 "Speaker" H 5900 4350 50  0000 L CNN
-F 2 "conn:TE_640456-2" H 6050 4500 50  0001 C CNN
-F 3 "~" H 6040 4650 50  0001 C CNN
-	1    6050 4700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 615C22C0
@@ -858,12 +808,12 @@ Wire Notes Line
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6160EB38
-P 7250 1450
-F 0 "H2" H 7350 1496 50  0000 L CNN
-F 1 "Mounting" H 7350 1405 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 1450 50  0001 C CNN
-F 3 "~" H 7250 1450 50  0001 C CNN
-	1    7250 1450
+P 7250 950
+F 0 "H2" H 7350 996 50  0000 L CNN
+F 1 "Mounting" H 7350 905 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 950 50  0001 C CNN
+F 3 "~" H 7250 950 50  0001 C CNN
+	1    7250 950 
 	1    0    0    -1  
 $EndComp
 Text Notes 7250 4250 0    50   ~ 0
@@ -1172,28 +1122,6 @@ F 3 "~" H 2500 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 2550 2600 2550
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 6231D343
-P 7250 850
-F 0 "H1" H 7350 899 50  0000 L CNN
-F 1 "ESP_GND_Pad_Hole" H 7350 808 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7250 850 50  0001 C CNN
-F 3 "~" H 7250 850 50  0001 C CNN
-	1    7250 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR035
-U 1 1 6234535B
-P 7250 950
-F 0 "#PWR035" H 7250 700 50  0001 C CNN
-F 1 "GND" H 7255 777 50  0000 C CNN
-F 2 "" H 7250 950 50  0001 C CNN
-F 3 "" H 7250 950 50  0001 C CNN
-	1    7250 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 3500 8250 3500
 Wire Wire Line
@@ -1201,34 +1129,34 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 6297244E
-P 7250 1700
-F 0 "H3" H 7350 1746 50  0000 L CNN
-F 1 "Mounting" H 7350 1655 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 1700 50  0001 C CNN
-F 3 "~" H 7250 1700 50  0001 C CNN
-	1    7250 1700
+P 7250 1550
+F 0 "H3" H 7350 1596 50  0000 L CNN
+F 1 "Mounting" H 7350 1505 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7250 1550 50  0001 C CNN
+F 3 "~" H 7250 1550 50  0001 C CNN
+	1    7250 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 6297281E
-P 7850 1450
-F 0 "H4" H 7950 1496 50  0000 L CNN
-F 1 "Mounting" H 7950 1405 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 1450 50  0001 C CNN
-F 3 "~" H 7850 1450 50  0001 C CNN
-	1    7850 1450
+P 7850 950
+F 0 "H4" H 7950 996 50  0000 L CNN
+F 1 "Mounting" H 7950 905 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 950 50  0001 C CNN
+F 3 "~" H 7850 950 50  0001 C CNN
+	1    7850 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 62972B2A
-P 7850 1700
-F 0 "H5" H 7950 1746 50  0000 L CNN
-F 1 "Mounting" H 7950 1655 50  0000 L CNN
-F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 1700 50  0001 C CNN
-F 3 "~" H 7850 1700 50  0001 C CNN
-	1    7850 1700
+P 7850 1550
+F 0 "H5" H 7950 1596 50  0000 L CNN
+F 1 "Mounting" H 7950 1505 50  0000 L CNN
+F 2 "PCB_ESP32:MountingHole_3.2mm_M3" H 7850 1550 50  0001 C CNN
+F 3 "~" H 7850 1550 50  0001 C CNN
+	1    7850 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1526,7 +1454,7 @@ AR Path="/613B739E/6147878D" Ref="U?"  Part="1"
 AR Path="/6147878D" Ref="U5"  Part="1" 
 F 0 "U5" H 5200 2700 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 5250 2600 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5350 750 50  0001 C CNN
+F 2 "PCB_ESP32:ESP32-WROOM-32" H 5350 750 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5050 2300 50  0001 C CNN
 	1    5350 2250
 	1    0    0    -1  
@@ -1860,7 +1788,7 @@ U 1 1 619E3CEA
 P 5400 4700
 F 0 "RV1" H 5300 4650 50  0000 R CNN
 F 1 "R_POT" H 5300 4550 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 5400 4700 50  0001 C CNN
+F 2 "PCB_ESP32:PinHeader_1x07_P2.54mm_Vertical" H 5400 4700 50  0001 C CNN
 F 3 "" H 5400 4700 50  0001 C CNN
 	1    5400 4700
 	1    0    0    -1  
@@ -1877,17 +1805,6 @@ F 3 "" H 4750 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5050 4550
-$Comp
-L esp_board:SN74HC151N U1
-U 1 1 61A04FB0
-P 2000 6200
-F 0 "U1" H 2000 6775 50  0000 C CNN
-F 1 "SN74HC151N" H 2000 6684 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6200 50  0001 C CNN
-F 3 "" H 2050 6200 50  0001 C CNN
-	1    2000 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8700 1350 9200 1350
 Wire Wire Line
@@ -2310,4 +2227,63 @@ Wire Wire Line
 Connection ~ 1550 4700
 Wire Wire Line
 	1700 4700 1700 4800
+$Comp
+L JST_Conn:640456-5 J19
+U 1 1 620AD8DA
+P 1700 2350
+F 0 "J19" H 1693 1969 50  0000 C CNN
+F 1 "Display_Conn" H 1693 2060 50  0000 C CNN
+F 2 "JST_Conn:TE_640456-5" H 1450 2050 50  0001 L BNN
+F 3 "" H 1700 2350 50  0001 L BNN
+	1    1700 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L JST_Conn:640456-8 J18
+U 1 1 620AF989
+P 800 3550
+F 0 "J18" H 793 4164 50  0000 C CNN
+F 1 "Keypad_Conn" H 793 4073 50  0000 C CNN
+F 2 "JST_Conn:TE_640456-8" H 550 3150 50  0001 L BNN
+F 3 "" H 800 3550 50  0001 L BNN
+	1    800  3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 615C22C6
+P 6050 4700
+AR Path="/6144DCFC/615C22C6" Ref="LS?"  Part="1" 
+AR Path="/615C22C6" Ref="LS1"  Part="1" 
+F 0 "LS1" H 5950 4450 50  0000 L CNN
+F 1 "Speaker" H 5900 4350 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 6050 4500 50  0001 C CNN
+F 3 "~" H 6040 4650 50  0001 C CNN
+	1    6050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 61603AE1
+P 2350 7550
+AR Path="/6154AAA6/61603AE1" Ref="M?"  Part="1" 
+AR Path="/61603AE1" Ref="M1"  Part="1" 
+F 0 "M1" V 2050 7450 50  0000 L CNN
+F 1 "Motor_DC" V 2150 7350 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 2350 7460 50  0001 C CNN
+F 3 "~" H 2350 7460 50  0001 C CNN
+	1    2350 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L esp_board:SN74HC151N U1
+U 1 1 61A04FB0
+P 2000 6200
+F 0 "U1" H 2000 5650 50  0000 C CNN
+F 1 "SN74HC151N" H 2000 5750 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2000 6200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
