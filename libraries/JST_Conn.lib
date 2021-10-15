@@ -1,116 +1,89 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
-#(c) SnapEDA 2016 (snapeda.com)
-#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
 #
 # 640456-2
 #
-DEF 640456-2 J 0 40 Y Y 1 L N
-F0 "J" -220 200 50 H V L BNN
+DEF 640456-2 J 0 40 Y Y 1 F N
+F0 "J" 0 200 50 H V L BNN
 F1 "640456-2" -200 -200 50 H V L BNN
-F2 "TE_640456-2" 0 0 50 H I L BNN
+F2 "JST_Conn:TE_640456-2" -200 -100 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
-F4 "Compliant" 0 0 50 H I L BNN "EU_RoHS_Compliance"
-F5 "640456-2" 0 0 50 H I L BNN "Comment"
 DRAW
-S -200 -100 200 200 0 0 10 f
-X 1 1 -400 100 200 R 40 40 0 0 P 
-X 2 2 -400 0 200 R 40 40 0 0 P 
+X ~ 1 -100 100 200 R 40 40 0 0 P
+X ~ 2 -100 0 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
 # 640456-5
 #
-DEF 640456-5 J 0 40 Y Y 1 L N
-F0 "J" -220 300 50 H V L BNN
+DEF 640456-5 J 0 40 Y Y 1 F N
+F0 "J" -20 300 50 H V L BNN
 F1 "640456-5" -200 -400 50 H V L BNN
-F2 "TE_640456-5" 0 0 50 H I L BNN
+F2 "JST_Conn:TE_640456-5" -250 -300 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
-F4 "Compliant" 0 0 50 H I L BNN "EU_RoHS_Compliance"
-F5 "640456-5" 0 0 50 H I L BNN "Comment"
-F6 "Connector" 0 0 50 H I L BNN "Product_Type"
-F7 "5" 0 0 50 H I L BNN "Number_of_Positions"
-F8 "2.54 mm[.1 in]" 0 0 50 H I L BNN "Centerline_Pitch"
 DRAW
-S -200 -300 200 300 0 0 10 f
-X 1 1 -400 200 200 R 40 40 0 0 P 
-X 2 2 -400 100 200 R 40 40 0 0 P 
-X 3 3 -400 0 200 R 40 40 0 0 P 
-X 4 4 -400 -100 200 R 40 40 0 0 P 
-X 5 5 -400 -200 200 R 40 40 0 0 P 
+X ~ 1 -100 200 200 R 40 40 0 0 P
+X ~ 2 -100 100 200 R 40 40 0 0 P
+X ~ 3 -100 0 200 R 40 40 0 0 P
+X ~ 4 -100 -100 200 R 40 40 0 0 P
+X ~ 5 -100 -200 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
 # 640456-6
 #
-DEF 640456-6 J 0 40 Y Y 1 L N
-F0 "J" -220 400 50 H V L BNN
-F1 "640456-6" -200 -400 50 H V L BNN
-F2 "TE_640456-6" 0 0 50 H I L BNN
+DEF 640456-6 J 0 40 Y Y 1 F N
+F0 "J" -20 450 50 H V L BNN
+F1 "640456-6" -250 -400 50 H V L BNN
+F2 "JST_Conn:TE_640456-6" -300 -300 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
-F4 "Compliant" 0 0 50 H I L BNN "EU_RoHS_Compliance"
-F5 "640456-6" 0 0 50 H I L BNN "Comment"
-F6 "Connector" 0 0 50 H I L BNN "Product_Type"
-F7 "6" 0 0 50 H I L BNN "Number_of_Positions"
-F8 "2.54 mm[.1 in]" 0 0 50 H I L BNN "Centerline_Pitch"
+F4 "6" 0 0 50 H I L BNN "Number_of_Positions"
 DRAW
-S -200 -300 200 400 0 0 10 f
-X 1 1 -400 300 200 R 40 40 0 0 P 
-X 2 2 -400 200 200 R 40 40 0 0 P 
-X 3 3 -400 100 200 R 40 40 0 0 P 
-X 4 4 -400 0 200 R 40 40 0 0 P 
-X 5 5 -400 -100 200 R 40 40 0 0 P 
-X 6 6 -400 -200 200 R 40 40 0 0 P 
+X ~ 1 -100 350 200 R 40 40 0 0 P
+X ~ 2 -100 250 200 R 40 40 0 0 P
+X ~ 3 -100 150 200 R 40 40 0 0 P
+X ~ 4 -100 50 200 R 40 40 0 0 P
+X ~ 5 -100 -50 200 R 40 40 0 0 P
+X ~ 6 -100 -150 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
 # 640456-7
 #
-DEF 640456-7 J 0 40 Y Y 1 L N
-F0 "J" -220 400 50 H V L BNN
+DEF 640456-7 J 0 40 Y Y 1 F N
+F0 "J" -20 400 50 H V L BNN
 F1 "640456-7" -200 -500 50 H V L BNN
-F2 "TE_640456-7" 0 0 50 H I L BNN
+F2 "JST_Conn:TE_640456-7" -250 -400 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
-F4 "Compliant" 0 0 50 H I L BNN "EU_RoHS_Compliance"
-F5 "640456-7" 0 0 50 H I L BNN "Comment"
-F6 "Connector" 0 0 50 H I L BNN "Product_Type"
-F7 "7" 0 0 50 H I L BNN "Number_of_Positions"
-F8 "2.54 mm[.1 in]" 0 0 50 H I L BNN "Centerline_Pitch"
+F4 "7" 0 0 50 H I L BNN "Number_of_Positions"
 DRAW
-S -200 -400 200 400 0 0 10 f
-X 1 1 -400 300 200 R 40 40 0 0 P 
-X 2 2 -400 200 200 R 40 40 0 0 P 
-X 3 3 -400 100 200 R 40 40 0 0 P 
-X 4 4 -400 0 200 R 40 40 0 0 P 
-X 5 5 -400 -100 200 R 40 40 0 0 P 
-X 6 6 -400 -200 200 R 40 40 0 0 P 
-X 7 7 -400 -300 200 R 40 40 0 0 P 
+X ~ 1 -100 300 200 R 40 40 0 0 P
+X ~ 2 -100 200 200 R 40 40 0 0 P
+X ~ 3 -100 100 200 R 40 40 0 0 P
+X ~ 4 -100 0 200 R 40 40 0 0 P
+X ~ 5 -100 -100 200 R 40 40 0 0 P
+X ~ 6 -100 -200 200 R 40 40 0 0 P
+X ~ 7 -100 -300 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
 # 640456-8
 #
-DEF 640456-8 J 0 40 Y Y 1 L N
-F0 "J" -220 500 50 H V L BNN
+DEF 640456-8 J 0 40 Y Y 1 F N
+F0 "J" -20 500 50 H V L BNN
 F1 "640456-8" -200 -500 50 H V L BNN
-F2 "TE_640456-8" 0 0 50 H I L BNN
+F2 "JST_Conn:TE_640456-8" -250 -400 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
-F4 "Compliant" 0 0 50 H I L BNN "EU_RoHS_Compliance"
-F5 "640456-8" 0 0 50 H I L BNN "Comment"
-F6 "Connector" 0 0 50 H I L BNN "Product_Type"
-F7 "8" 0 0 50 H I L BNN "Number_of_Positions"
-F8 "2.54 mm[.1 in]" 0 0 50 H I L BNN "Centerline_Pitch"
 DRAW
-S -200 -400 200 500 0 0 10 f
-X 1 1 -400 400 200 R 40 40 0 0 P 
-X 2 2 -400 300 200 R 40 40 0 0 P 
-X 3 3 -400 200 200 R 40 40 0 0 P 
-X 4 4 -400 100 200 R 40 40 0 0 P 
-X 5 5 -400 0 200 R 40 40 0 0 P 
-X 6 6 -400 -100 200 R 40 40 0 0 P 
-X 7 7 -400 -200 200 R 40 40 0 0 P 
-X 8 8 -400 -300 200 R 40 40 0 0 P 
+X ~ 1 -100 400 200 R 40 40 0 0 P
+X ~ 2 -100 300 200 R 40 40 0 0 P
+X ~ 3 -100 200 200 R 40 40 0 0 P
+X ~ 4 -100 100 200 R 40 40 0 0 P
+X ~ 5 -100 0 200 R 40 40 0 0 P
+X ~ 6 -100 -100 200 R 40 40 0 0 P
+X ~ 7 -100 -200 200 R 40 40 0 0 P
+X ~ 8 -100 -300 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# End Library
+#End Library

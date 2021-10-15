@@ -1025,33 +1025,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 6200 8250 6150
 $Comp
-L Connector:Conn_01x06_Female J2
-U 1 1 61921F84
-P 10000 1050
-F 0 "J2" H 9800 1450 50  0000 L CNN
-F 1 "Grid_Conn" H 9800 1350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 10000 1050 50  0001 C CNN
-F 3 "~" H 10000 1050 50  0001 C CNN
-	1    10000 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J3
-U 1 1 619426C2
-P 10500 1050
-F 0 "J3" H 10300 1450 50  0000 L CNN
-F 1 "Grid_Conn" H 10300 1350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 10500 1050 50  0001 C CNN
-F 3 "~" H 10500 1050 50  0001 C CNN
-	1    10500 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 850  10300 850 
-Connection ~ 10300 850 
-Wire Wire Line
-	10300 850  9800 850 
-$Comp
 L power:+3.3V #PWR037
 U 1 1 61A90FDD
 P 8700 750
@@ -1064,29 +1037,6 @@ F 3 "" H 8700 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9800 850  9800 750 
-Wire Wire Line
-	9800 750  9200 750 
-Connection ~ 9800 850 
-Connection ~ 9200 750 
-Wire Wire Line
-	9200 750  8700 750 
-Connection ~ 9800 950 
-Wire Wire Line
-	9800 950  10300 950 
-Connection ~ 10300 950 
-Wire Wire Line
-	10300 950  10800 950 
-Wire Wire Line
-	10800 1050 10300 1050
-Connection ~ 10300 1050
-Wire Wire Line
-	10300 1050 9800 1050
-Connection ~ 9200 1350
-Wire Wire Line
-	9200 1350 8700 1350
-Connection ~ 9800 1350
-Wire Wire Line
-	9800 1350 9200 1350
 Text Label 8600 850  0    50   ~ 0
 LED_OUT
 $Comp
@@ -1107,42 +1057,9 @@ MUX_COL_SEL0
 Text Label 8600 950  0    50   ~ 0
 MUX_COL_SEL1
 Wire Wire Line
-	8600 950  9200 950 
-Wire Wire Line
-	8600 1050 9200 1050
-Wire Wire Line
-	8600 1150 9200 1150
-Wire Wire Line
 	8600 1250 9200 1250
 Wire Wire Line
 	8600 850  9200 850 
-$Comp
-L Connector:Conn_01x06_Female J7
-U 1 1 61C11336
-P 10500 2050
-F 0 "J7" H 10300 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 10300 2350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 10500 2050 50  0001 C CNN
-F 3 "~" H 10500 2050 50  0001 C CNN
-	1    10500 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x06_Female J8
-U 1 1 61C1133C
-P 11000 2050
-F 0 "J8" H 10800 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 10800 2350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 11000 2050 50  0001 C CNN
-F 3 "~" H 11000 2050 50  0001 C CNN
-	1    11000 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 1850 10300 1850
-Connection ~ 10300 1850
-Wire Wire Line
-	10300 1850 9800 1850
 $Comp
 L power:+3.3V #PWR039
 U 1 1 61C11345
@@ -1154,26 +1071,6 @@ F 3 "" H 8700 1850 50  0001 C CNN
 	1    8700 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 1850 8700 1850
-Wire Wire Line
-	9800 1950 10300 1950
-Connection ~ 10300 1950
-Wire Wire Line
-	10300 1950 10800 1950
-Wire Wire Line
-	10800 2050 10300 2050
-Connection ~ 10300 2050
-Wire Wire Line
-	10300 2050 9800 2050
-Wire Wire Line
-	10800 2350 10300 2350
-Connection ~ 10300 2350
-Wire Wire Line
-	10800 2150 10300 2150
-Connection ~ 10300 2150
-Wire Wire Line
-	10300 2150 9800 2150
 $Comp
 L power:GND #PWR040
 U 1 1 61C11378
@@ -1192,43 +1089,7 @@ MUX_COL_SEL0
 Text Label 8600 1950 0    50   ~ 0
 MUX_COL_SEL1
 Wire Wire Line
-	8600 1950 9200 1950
-Wire Wire Line
-	8600 2050 9200 2050
-Wire Wire Line
-	8600 2150 9200 2150
-Wire Wire Line
 	8600 2250 9200 2250
-Wire Wire Line
-	8700 2350 9200 2350
-$Comp
-L Connector:Conn_01x06_Female J5
-U 1 1 61C5494A
-P 9400 2050
-F 0 "J5" H 9200 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 9200 2350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 9400 2050 50  0001 C CNN
-F 3 "~" H 9400 2050 50  0001 C CNN
-	1    9400 2050
-	1    0    0    -1  
-$EndComp
-Connection ~ 9200 2350
-Wire Wire Line
-	9800 1850 9200 1850
-Connection ~ 9800 1850
-Connection ~ 9200 1850
-Wire Wire Line
-	9200 1950 9800 1950
-Connection ~ 9200 1950
-Connection ~ 9800 1950
-Wire Wire Line
-	9800 2050 9200 2050
-Connection ~ 9800 2050
-Connection ~ 9200 2050
-Wire Wire Line
-	9200 2150 9800 2150
-Connection ~ 9200 2150
-Connection ~ 9800 2150
 $Comp
 L power:+3.3V #PWR041
 U 1 1 61CE24E4
@@ -1798,13 +1659,6 @@ Wire Wire Line
 	5950 2050 6700 2050
 Wire Wire Line
 	6700 1450 5950 1450
-Wire Wire Line
-	9200 950  9800 950 
-Connection ~ 9200 950 
-Wire Wire Line
-	9200 1050 9800 1050
-Connection ~ 9200 1050
-Connection ~ 9800 1050
 Text Label 8600 1250 0    50   ~ 0
 MUX_R0
 Text Label 8600 2250 0    50   ~ 0
@@ -1818,38 +1672,9 @@ MUX_R7
 Wire Wire Line
 	9800 1250 9450 1250
 Wire Wire Line
-	9800 1350 10300 1350
-Wire Wire Line
 	10300 1250 10000 1250
-$Comp
-L Connector:Conn_01x06_Female J4
-U 1 1 6196DC3C
-P 11000 1050
-F 0 "J4" H 10800 1450 50  0000 L CNN
-F 1 "Grid_Conn" H 10800 1350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 11000 1050 50  0001 C CNN
-F 3 "~" H 11000 1050 50  0001 C CNN
-	1    11000 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10800 1250 10500 1250
-Wire Wire Line
-	9200 2350 9800 2350
-Wire Wire Line
-	10300 2350 9800 2350
-Connection ~ 9800 2350
-$Comp
-L Connector:Conn_01x06_Female J6
-U 1 1 61C11330
-P 10000 2050
-F 0 "J6" H 9800 2450 50  0000 L CNN
-F 1 "Grid_Conn" H 9800 2350 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-6" H 10000 2050 50  0001 C CNN
-F 3 "~" H 10000 2050 50  0001 C CNN
-	1    10000 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9800 2250 9450 2250
 Wire Wire Line
@@ -2010,9 +1835,6 @@ Wire Wire Line
 Connection ~ 10300 3700
 Wire Wire Line
 	10300 3700 9800 3700
-Connection ~ 10300 1350
-Wire Wire Line
-	10300 1350 10800 1350
 Text Label 850  6350 0    50   ~ 0
 MUX_R5
 Text Label 850  6450 0    50   ~ 0
@@ -2035,26 +1857,6 @@ Text Label 10000 1250 0    50   ~ 0
 MUX_R2
 Text Label 9450 1250 0    50   ~ 0
 MUX_R1
-$Comp
-L Connector:Conn_01x07_Female J1
-U 1 1 6191D287
-P 9400 1050
-F 0 "J1" H 9050 1450 50  0000 L CNN
-F 1 "Grid_Conn_LED" H 9200 1450 50  0000 L CNN
-F 2 "JST_Conn:TE_640456-7" H 9400 1050 50  0001 C CNN
-F 3 "~" H 9400 1050 50  0001 C CNN
-	1    9400 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 1150 9800 1150
-Connection ~ 9200 1150
-Connection ~ 9800 1150
-Wire Wire Line
-	9800 1150 10300 1150
-Connection ~ 10300 1150
-Wire Wire Line
-	10300 1150 10800 1150
 $Comp
 L power:+BATT #PWR014
 U 1 1 61C44AB1
@@ -2296,6 +2098,234 @@ F 1 "SwitchingRegulator" H 2350 5224 50  0000 C CNN
 F 2 "PCB_ESP32:SwitchingRegulator" H 2400 4800 50  0001 C CNN
 F 3 "" H 2400 4800 50  0001 C CNN
 	1    2400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1350 9200 1350
+Wire Wire Line
+	8600 1150 9200 1150
+Wire Wire Line
+	8600 1050 9200 1050
+Wire Wire Line
+	8600 950  9200 950 
+Wire Wire Line
+	8700 750  9200 750 
+$Comp
+L JST_Conn:640456-7 J1
+U 1 1 61A698AE
+P 9300 1050
+F 0 "J1" H 9250 1550 50  0000 L CNN
+F 1 "Grid_Conn" H 9100 1450 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-7" H 9050 650 50  0001 L BNN
+F 3 "" H 9300 1050 50  0001 L BNN
+F 4 "7" H 9300 1050 50  0001 L BNN "Number_of_Positions"
+	1    9300 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 750 
+Wire Wire Line
+	9200 750  9800 750 
+Connection ~ 9200 950 
+Connection ~ 9200 1050
+Connection ~ 9200 1150
+Connection ~ 9200 1350
+$Comp
+L JST_Conn:640456-6 J2
+U 1 1 61A87FCE
+P 9900 1200
+F 0 "J2" H 9850 1750 50  0000 L CNN
+F 1 "640456-6" H 9700 1650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 9600 900 50  0001 L BNN
+F 3 "" H 9900 1200 50  0001 L BNN
+F 4 "6" H 9900 1200 50  0001 L BNN "Number_of_Positions"
+	1    9900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J3
+U 1 1 61A89BE3
+P 10400 1200
+F 0 "J3" H 10350 1750 50  0000 L CNN
+F 1 "640456-6" H 10200 1650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10100 900 50  0001 L BNN
+F 3 "" H 10400 1200 50  0001 L BNN
+F 4 "6" H 10400 1200 50  0001 L BNN "Number_of_Positions"
+	1    10400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J4
+U 1 1 61A8A0CA
+P 10900 1200
+F 0 "J4" H 10850 1750 50  0000 L CNN
+F 1 "640456-6" H 10700 1650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10600 900 50  0001 L BNN
+F 3 "" H 10900 1200 50  0001 L BNN
+F 4 "6" H 10900 1200 50  0001 L BNN "Number_of_Positions"
+	1    10900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J5
+U 1 1 61A8A3A4
+P 9300 2200
+F 0 "J5" H 9250 2750 50  0000 L CNN
+F 1 "640456-6" H 9100 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 9000 1900 50  0001 L BNN
+F 3 "" H 9300 2200 50  0001 L BNN
+F 4 "6" H 9300 2200 50  0001 L BNN "Number_of_Positions"
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 850  10300 850 
+Wire Wire Line
+	9200 950  9800 950 
+Wire Wire Line
+	9200 1050 9800 1050
+Wire Wire Line
+	9200 1150 9800 1150
+Wire Wire Line
+	9200 1350 9800 1350
+Connection ~ 9800 850 
+Connection ~ 9800 950 
+Wire Wire Line
+	9800 950  10300 950 
+Connection ~ 9800 1050
+Wire Wire Line
+	9800 1050 10300 1050
+Connection ~ 9800 1150
+Wire Wire Line
+	9800 1150 10300 1150
+Connection ~ 9800 1350
+Wire Wire Line
+	9800 1350 10300 1350
+Connection ~ 10300 850 
+Wire Wire Line
+	10300 850  10800 850 
+Connection ~ 10300 950 
+Wire Wire Line
+	10300 950  10800 950 
+Connection ~ 10300 1050
+Wire Wire Line
+	10300 1050 10800 1050
+Connection ~ 10300 1150
+Wire Wire Line
+	10300 1150 10800 1150
+Connection ~ 10300 1350
+Wire Wire Line
+	10300 1350 10800 1350
+$Comp
+L JST_Conn:640456-6 J6
+U 1 1 61B3E606
+P 9900 2200
+F 0 "J6" H 9850 2750 50  0000 L CNN
+F 1 "640456-6" H 9700 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 9600 1900 50  0001 L BNN
+F 3 "" H 9900 2200 50  0001 L BNN
+F 4 "6" H 9900 2200 50  0001 L BNN "Number_of_Positions"
+	1    9900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J7
+U 1 1 61B3E982
+P 10400 2200
+F 0 "J7" H 10350 2750 50  0000 L CNN
+F 1 "640456-6" H 10200 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10100 1900 50  0001 L BNN
+F 3 "" H 10400 2200 50  0001 L BNN
+F 4 "6" H 10400 2200 50  0001 L BNN "Number_of_Positions"
+	1    10400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-6 J8
+U 1 1 61B3EC9B
+P 10900 2200
+F 0 "J8" H 10850 2750 50  0000 L CNN
+F 1 "640456-6" H 10700 2650 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-6" H 10600 1900 50  0001 L BNN
+F 3 "" H 10900 2200 50  0001 L BNN
+F 4 "6" H 10900 2200 50  0001 L BNN "Number_of_Positions"
+	1    10900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1850 9200 1850
+Wire Wire Line
+	8600 1950 9200 1950
+Wire Wire Line
+	8600 2050 9200 2050
+Wire Wire Line
+	8600 2150 9200 2150
+Wire Wire Line
+	8700 2350 9200 2350
+Connection ~ 9200 1850
+Wire Wire Line
+	9200 1850 9800 1850
+Connection ~ 9200 1950
+Wire Wire Line
+	9200 1950 9800 1950
+Connection ~ 9200 2050
+Wire Wire Line
+	9200 2050 9800 2050
+Connection ~ 9200 2150
+Wire Wire Line
+	9200 2150 9800 2150
+Connection ~ 9200 2350
+Wire Wire Line
+	9200 2350 9800 2350
+Connection ~ 9800 1850
+Wire Wire Line
+	9800 1850 10300 1850
+Connection ~ 9800 1950
+Wire Wire Line
+	9800 1950 10300 1950
+Connection ~ 9800 2050
+Wire Wire Line
+	9800 2050 10300 2050
+Connection ~ 9800 2150
+Wire Wire Line
+	9800 2150 10300 2150
+Connection ~ 9800 2350
+Wire Wire Line
+	9800 2350 10300 2350
+Connection ~ 10300 1850
+Wire Wire Line
+	10300 1850 10800 1850
+Connection ~ 10300 1950
+Wire Wire Line
+	10300 1950 10800 1950
+Connection ~ 10300 2050
+Wire Wire Line
+	10300 2050 10800 2050
+Connection ~ 10300 2150
+Wire Wire Line
+	10300 2150 10800 2150
+Connection ~ 10300 2350
+Wire Wire Line
+	10300 2350 10800 2350
+$Comp
+L JST_Conn:640456-2 J9
+U 1 1 61BA1C7E
+P 9550 2600
+F 0 "J9" H 9679 2713 50  0000 L CNN
+F 1 "640456-2" H 9679 2622 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 9350 2500 50  0001 L BNN
+F 3 "" H 9550 2600 50  0001 L BNN
+	1    9550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L JST_Conn:640456-2 J10
+U 1 1 61BA241D
+P 10650 2600
+F 0 "J10" H 10779 2713 50  0000 L CNN
+F 1 "640456-2" H 10779 2622 50  0000 L CNN
+F 2 "JST_Conn:TE_640456-2" H 10450 2500 50  0001 L BNN
+F 3 "" H 10650 2600 50  0001 L BNN
+	1    10650 2600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
