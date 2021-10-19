@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name esp_board)(type Legacy)(uri ${KIPRJMOD}/libraries/esp_board.lib)(options "")(descr ""))
   (lib (name JST_Conn)(type Legacy)(uri ${KIPRJMOD}/libraries/JST_Conn.lib)(options "")(descr ""))
+  (lib (name sink_or_be_sunk-rescue)(type Legacy)(uri ${KIPRJMOD}/sink_or_be_sunk-rescue.lib)(options "")(descr ""))
 )

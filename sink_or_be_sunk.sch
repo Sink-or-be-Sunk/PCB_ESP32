@@ -1772,17 +1772,6 @@ Text Notes -1400 4750 0    50   ~ 0
 Text Notes 2000 5100 0    50   ~ 0
 R_trim = 3160\nfor 3.3V output
 $Comp
-L Connector:USB_B_Micro J17
-U 1 1 619C22A6
-P 10000 4750
-F 0 "J17" H 9770 4739 50  0000 R CNN
-F 1 "USB_B_Micro" H 9770 4648 50  0000 R CNN
-F 2 "PCB_ESP32:USB_Micro_B_Female_Vert_1051330001" H 10150 4700 50  0001 C CNN
-F 3 "~" H 10150 4700 50  0001 C CNN
-	1    10000 4750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L esp_board:R_POT RV1
 U 1 1 619E3CEA
 P 5400 4700
@@ -2285,5 +2274,16 @@ F 2 "Package_DIP:DIP-16_W10.16mm" H 2050 6200 50  0001 C CNN
 F 3 "" H 2050 6200 50  0001 C CNN
 	1    2000 6200
 	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J17
+U 1 1 619C22A6
+P 10000 4750
+F 0 "J17" H 9770 4739 50  0000 R CNN
+F 1 "USB_B_Micro" H 9770 4648 50  0000 R CNN
+F 2 "PCB_ESP32:USB_Micro_B_Female_Vert_1051330001" H 10150 4700 50  0001 C CNN
+F 3 "~" H 10150 4700 50  0001 C CNN
+	1    10000 4750
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
