@@ -2184,17 +2184,6 @@ F 3 "~" H 10150 4700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L esp_board:LM4890 U2
-U 1 1 61765949
-P 5500 5000
-F 0 "U2" H 5700 5250 50  0000 C CNN
-F 1 "LM4890" H 5300 5250 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 5500 5000 50  0001 C CNN
-F 3 "" H 5500 5000 50  0001 C CNN
-	1    5500 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L esp_board:R_POT RV1
 U 1 1 619E3CEA
 P 6100 4900
@@ -2209,7 +2198,6 @@ Wire Wire Line
 	6100 4750 5950 4750
 Wire Wire Line
 	5950 4750 5950 4900
-Connection ~ 5950 4900
 Wire Wire Line
 	5950 5000 6250 5000
 $Comp
@@ -2230,7 +2218,7 @@ L power:+3.3V #PWR0102
 U 1 1 617B141F
 P 5550 4750
 F 0 "#PWR0102" H 5550 4600 50  0001 C CNN
-F 1 "+3.3V" H 5565 4923 50  0000 C CNN
+F 1 "+3.3V" H 5550 4900 50  0000 C CNN
 F 2 "" H 5550 4750 50  0001 C CNN
 F 3 "" H 5550 4750 50  0001 C CNN
 	1    5550 4750
@@ -2297,8 +2285,6 @@ F 3 "~" H 4250 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 5000 4750 5000
-Text Label 3750 5000 0    50   ~ 0
-S_BYPASS
 Wire Wire Line
 	4150 5000 3750 5000
 Text Label 4650 5100 0    50   ~ 0
@@ -2309,8 +2295,6 @@ Text Label 4650 5200 0    50   ~ 0
 S_BYPASS
 Wire Wire Line
 	5050 5200 4650 5200
-Text Label 4550 5450 3    50   ~ 0
-S_SHDN
 Wire Wire Line
 	4550 5850 4550 5450
 $Comp
@@ -2383,4 +2367,68 @@ Wire Notes Line
 	3600 4050 3600 6200
 Wire Notes Line
 	6850 4050 6850 6200
+$Comp
+L Device:R R?
+U 1 1 61C2C207
+P 5250 4500
+AR Path="/6158EAAB/61C2C207" Ref="R?"  Part="1" 
+AR Path="/61C2C207" Ref="R3"  Part="1" 
+F 0 "R3" V 5150 4500 50  0000 C CNN
+F 1 "20k" V 5250 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5180 4500 50  0001 C CNN
+F 3 "~" H 5250 4500 50  0001 C CNN
+	1    5250 4500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5100 4500 5050 4500
+Wire Wire Line
+	5050 4500 5050 4900
+Wire Wire Line
+	5400 4500 5950 4500
+Wire Wire Line
+	5950 4500 5950 4750
+Connection ~ 5950 4750
+$Comp
+L Device:C C6
+U 1 1 61C8ADBF
+P 5050 5350
+F 0 "C6" H 5165 5396 50  0000 L CNN
+F 1 "1uF" H 5165 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5088 5200 50  0001 C CNN
+F 3 "~" H 5050 5350 50  0001 C CNN
+	1    5050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C8B60E
+P 5050 5500
+AR Path="/6144DCFC/61C8B60E" Ref="#PWR?"  Part="1" 
+AR Path="/61C8B60E" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 5050 5250 50  0001 C CNN
+F 1 "GND" H 5055 5327 50  0000 C CNN
+F 2 "" H 5050 5500 50  0001 C CNN
+F 3 "" H 5050 5500 50  0001 C CNN
+	1    5050 5500
+	1    0    0    -1  
+$EndComp
+Text Label 3750 5000 0    50   ~ 0
+S_BYPASS
+Text Label 4550 5450 3    50   ~ 0
+S_SHDN
+$Comp
+L esp_board:LM4890 U2
+U 1 1 61CF80C5
+P 5500 5000
+F 0 "U2" H 5700 5200 50  0000 C CNN
+F 1 "LM4890" H 5300 5200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 5500 5000 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm4890.pdf?ts=1634821714101&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5500 5000 50  0001 C CNN
+	1    5500 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 5200
+Connection ~ 5050 4900
+Connection ~ 5950 4900
 $EndSCHEMATC
